@@ -65,6 +65,7 @@ body{
     }
 }
 
+// mobile-navbar
 .mobile-navbar{
     display: none;
 
@@ -72,4 +73,8 @@ body{
         display: block;
         @include for-pop-out;
     }
+}
+
+.hero{
+    @include hero-section;
 }
