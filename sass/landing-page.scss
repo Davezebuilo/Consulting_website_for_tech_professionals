@@ -1,0 +1,56 @@
+@import "./mediaQuery";
+@import "./mixins";
+@import "./variables";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;  
+    background-color: $backgroundColor;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        overflow-x: hidden;
+    }
+}
+
+// laptop-navbar
+.laptop-navbar{
+    @include laptop-navbar;
+
+    .button-wrap{
+        width: 250px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        a{
+            
+            &:nth-of-type(2){
+                button{
+                    @include filled-button;                
+                }
+            }
+        }
+
+        a{
+            
+            &:first-of-type{
+                button{
+                    @include border-button;          
+                }
+            }
+        }
+    }
+}
