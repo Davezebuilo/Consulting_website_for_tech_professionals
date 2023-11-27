@@ -358,6 +358,11 @@
             border-radius: 10px;
             background-color: $inputbg;
             border: none;
+
+            
+        }
+        ::placeholder {
+            padding-left: 10px;
         }
         .gender {
             padding: 10px;

@@ -400,6 +400,21 @@ body {
   background-color: #cbdae8;
   border: none;
 }
+.signup form ::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+.signup form ::-moz-placeholder {
+  padding-left: 10px;
+}
+.signup form :-ms-input-placeholder {
+  padding-left: 10px;
+}
+.signup form ::-ms-input-placeholder {
+  padding-left: 10px;
+}
+.signup form ::placeholder {
+  padding-left: 10px;
+}
 .signup form .gender {
   padding: 10px;
   display: -webkit-box;
