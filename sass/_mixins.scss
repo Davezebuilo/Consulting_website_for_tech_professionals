@@ -1,0 +1,149 @@
+@import "./variables";
+@import"./mediaQuery";
+
+// Navbar design
+
+// laptop navbar
+@mixin laptop-navbar{
+    width: 100%;
+    height: 80px;
+    background-color: $backgroundColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: $Margin;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    border-bottom: 0.5px solid rgba(182, 182, 182, 0.349);
+    // display: none;
+
+    a{
+        text-decoration: none;
+        color: none;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .logo{
+        font-size: 30px;
+        font-weight: 700;
+        color: $PrimaryColor;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        animation-duration: 5s;
+        // animation-delay: 2s;
+        animation-name: changer;
+        animation-timing-function: cubic-bezier(1, 0, 0, 1);
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 45px;
+
+        li{
+            font-size: 14px;
+            font-weight: 700;
+            color: $PrimaryColor;
+            letter-spacing: 1px;
+            position: relative;
+            list-style: none;
+
+            a{
+                color: $PrimaryColor;
+
+                &:hover{
+                    color: $whiteColor;
+                }
+            }
+
+            &::before{
+                position: absolute;
+                content: "";
+                width: 0%;
+                height: 3px;
+                background-color: $PrimaryColor;
+                bottom: -10%;
+                transition: 400ms ease;
+            }
+
+            &:hover{
+
+                &::before{
+                    width: 100%;
+                }
+            }
+
+            &::after{
+                position: absolute;
+                content: "";
+                width: 0%;
+                height: 2px;
+                background-color: $SecondaryColor;
+                bottom: -15%;
+                right: 0;
+                transition: 400ms ease;
+            }
+
+            &:hover{
+
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// mobile navbar
+@mixin mobile-navbar{
+
+}
+
+// buttons
+
+// bordered buttons
+@mixin border-button{
+    padding: 12px 30px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    border: 1px solid $PrimaryColor;
+    border-radius: 5px;
+    color: $PrimaryColor;
+    transition: 300ms;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $PrimaryColor-v;
+        background-color: rgba(1, 171, 239, 0.3);
+        transform: scale(1.05);
+    }
+}
+
+// Filled buttons
+@mixin filled-button{
+
+    padding: 12px 30px;
+    background-color: $PrimaryColor;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: $whiteColor;
+    transition: 300ms;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $PrimaryColor-v;
+        transform: scale(1.05);
+    }
+}
