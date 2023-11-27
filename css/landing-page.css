@@ -343,6 +343,9 @@ body {
   }
 }
 
+.signup .img-container {
+  display: none;
+}
 .signup .sign-up {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,4 +454,72 @@ body {
 }
 .signup .signup-img img {
   width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .signup .img-container {
+    display: none;
+  }
+  .signup .sign-up {
+    padding-inline: 50px;
+  }
+  .signup .signup-img {
+    width: 60%;
+    height: 400px;
+  }
+  .signup .signup-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 727px) {
+  .signup h1 {
+    font-size: 25px;
+  }
+  .signup .sign-up {
+    display: none;
+  }
+  .signup .img-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  .signup .img-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .signup .overlay {
+    position: absolute;
+    top: 300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as per your requirement */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .signup .gender {
+    inline-size: 300px;
+    font-size: 18px;
+  }
+  .signup .gender #gender {
+    width: 100px;
+  }
+  .signup .gender input {
+    width: 20px;
+  }
+  .signup button {
+    width: 200px;
+    height: 50px;
+  }
 }

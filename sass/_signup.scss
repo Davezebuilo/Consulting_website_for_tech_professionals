@@ -298,6 +298,9 @@
 
 
 @mixin Sign-up {
+    .img-container {
+        display: none;
+    }
 
     
     .sign-up {
@@ -411,6 +414,85 @@
     }
 
 
+    @media screen and (max-width: 1024px) {
+        .img-container{
+            display: none;
 
+        }
+        .sign-up {
+            padding-inline: 50px;
+        }
+
+        .signup-img {
+            width: 60%;
+            height: 400px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 727px) {
+
+        h1 {
+            font-size: 25px;
+        }
+
+        .sign-up{
+            display: none;
+        }
+        .img-container{
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+            .overlay {
+                position: absolute;
+                top: 300px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as per your requirement */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                // opacity: 0;
+                // transition: opacity 0.5s;
+              }
+              
+              .gender {
+                inline-size: 300px;
+                
+                font-size: 18px;
+                #gender {
+                    width: 100px;
+                    
+                }
+                input {
+                    width: 20px;
+                }
+            }
+
+            button {
+                width: 200px;
+                height: 50px;
+            }
+
+        
+
+    }
 
 }
