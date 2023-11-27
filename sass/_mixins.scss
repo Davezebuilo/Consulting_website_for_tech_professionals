@@ -284,7 +284,133 @@
 
     &:hover{
         cursor: pointer;
-        background-color: $PrimaryColor-v;
+        background-color: $SecondaryColor;
         transform: scale(1.05);
     }
+}
+
+// hero section on landing page
+@mixin hero-section{
+    width: 100%;
+    height: 600px;
+    padding-inline: $Margin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+
+    .leftSide{
+        width: 50%;
+        height: 100%;
+        // background-color: brown;
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        .heroTxt{
+
+            h1{
+                font-size: 50px;
+                font-weight: 700;
+                width: 650px;
+                color: $PrimaryColor;
+                margin-bottom: 40px;
+
+                span{
+                    color: $SecondaryColor;
+                }
+            }
+
+            p{
+
+                color: $backgroundColor-v;
+                font-size: 18px;
+                font-weight: 100;
+                margin-bottom: 30px;
+
+                span{
+                    color: $PrimaryColor;
+                }
+            }
+
+            ul{
+                display: grid;
+                gap: 30px;
+                list-style: none;
+                // list-style-image: url(../img/checkbox-circle-fill.png);
+
+                li{
+                    height: 20px;
+                    color: $whiteColor;
+                    font-size: 14px;
+                    font-weight: 100;
+
+                    span{
+                        color: $SecondaryColor;
+                    }
+
+                    i{
+                        font-size: 16px;
+                        color: $SecondaryColor;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .CTA{
+            display: flex;
+            gap: 20px;
+
+            a{
+                text-decoration: none;
+
+                button{
+                    @include filled-button();
+                }
+
+                &:nth-of-type(2){
+                    button{
+                        @include border-button();
+                    }
+                }
+            }
+        }
+    }
+
+    .rightSide{
+        width: 50%;
+        height: 100%;
+        // background-color: aqua;
+        display: grid;
+        place-items: center;
+
+        .heroImg{
+            width: 550px;
+            height: 550px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .shadow1{
+        @include for-shadow();
+    }
+}
+
+@mixin for-shadow{
+    width: 600px;
+    height: 400px;
+    background-color: $shadowSetting;
+    position: absolute;
+    z-index: -1;
+    right: 3%;
+    bottom: -10%;
+    filter: blur(184px);
 }
