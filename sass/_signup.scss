@@ -304,6 +304,10 @@
         display: flex;
         justify-content: center;
         padding-inline: 200px;
+
+        .signup-firstwrapper {
+            width: 80%;
+        }
         
     }
 
@@ -312,12 +316,14 @@
     .form{
     
     display: flex;
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
     justify-self: center;
     align-self: center;
     gap: 1rem;
+    width: 100%;
 
     }
 
@@ -332,15 +338,17 @@
         
         width: 60%;
         color: $whiteColor;
-        padding: 50px;
+        // padding: 50px;
 
-        border: 5px solid $PrimaryColor;
+        // border: 5px solid $PrimaryColor;
 
-        border-radius: 30px;
+        // // border-radius: 30px;
 
-        label {
+        #label {
             width: 200px;
             display: inline-block;
+            color: $PrimaryColor;
+            font-size: 18px;
             
         }
 
@@ -348,6 +356,22 @@
             width: 350px;
             height: 40px;
             border-radius: 10px;
+            background-color: $inputbg;
+            border: none;
+        }
+        .gender {
+            padding: 10px;
+            display: flex;
+            gap: 0;
+            color: $PrimaryColor;
+            font-size: 18px;
+            #gender {
+                width: 200px;
+                
+            }
+            input {
+                width: 20px;
+            }
         }
     }
 
@@ -360,10 +384,14 @@
         color: $backgroundColor;
         border: none;
         transition: 0.5s ease;
+        cursor: pointer;
 
         &:hover {
             background-color: $PrimaryColor;
             color: $whiteColor;
+            
+            
+            
         }
     }
 

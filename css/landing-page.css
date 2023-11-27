@@ -352,6 +352,9 @@ body {
           justify-content: center;
   padding-inline: 200px;
 }
+.signup .sign-up .signup-firstwrapper {
+  width: 80%;
+}
 .signup .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,6 +375,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   gap: 1rem;
+  width: 100%;
 }
 .signup h1 {
   color: #0AE8F5;
@@ -382,18 +386,34 @@ body {
 .signup form {
   width: 60%;
   color: #f0f0f0;
-  padding: 50px;
-  border: 5px solid #01ACEE;
-  border-radius: 30px;
 }
-.signup form label {
+.signup form #label {
   width: 200px;
   display: inline-block;
+  color: #01ACEE;
+  font-size: 18px;
 }
 .signup form .input {
   width: 350px;
   height: 40px;
   border-radius: 10px;
+  background-color: #cbdae8;
+  border: none;
+}
+.signup form .gender {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0;
+  color: #01ACEE;
+  font-size: 18px;
+}
+.signup form .gender #gender {
+  width: 200px;
+}
+.signup form .gender input {
+  width: 20px;
 }
 .signup button {
   width: 200px;
@@ -405,6 +425,7 @@ body {
   border: none;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 .signup button:hover {
   background-color: #01ACEE;

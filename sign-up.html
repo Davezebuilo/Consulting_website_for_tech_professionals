@@ -75,24 +75,24 @@
         <div class="sign-up">
             
 
-            <div>
+            <div class="signup-firstwrapper">
                 
     
                 <form action="" method="post" enctype="multipart/form-data" class="form">
                     <div class="form-item">
-                        <label for="name"> First Name: </label>
+                        <label for="name"  id="label"> First Name: </label>
                         <input type="text" id="name" placeholder="Enter first name" name="fullName"  required class="input">
     
                     </div>
     
                     <div class="form-item">
-                        <label for="name"> Last Name: </label>
+                        <label for="name"  id="label"> Last Name: </label>
                         <input type="text" id="name" placeholder="Enter your last name" name="fullName"  required class="input">
     
                     </div>
     
                     <div class="form-item">
-                        <label for="name"> Address: </label>
+                        <label for="name"  id="label"> Address: </label>
                         <input type="text" id="name" placeholder="Enter your address" name="fullName"  required class="input">
     
                     </div>
@@ -102,33 +102,40 @@
                     
                     <div class="form-item">
                         
-                        <label for="email"> Email: </label>
+                        <label for="email"  id="label"> Email: </label>
                         <input type="email" id="email" required class="input">
     
                     </div>
     
                     <div class="form-item">
-                        <label for="password"> Password: </label>
+                        <label for="password"  id="label"> Password: </label>
                         <input type="password" id="password" required class="input">
                     </div>
     
                     <div class="form-item">
-                        <label for="password">Confirm Password: </label>
+                        <label for="password"  id="label">Confirm Password: </label>
                         <input type="password" id="password" required class="input">
                     </div>
     
     
                     <div class="form-item">
-                        <label for="tel"TEL>Phone number:</label>
+                        <label for="tel"TEL id="label">Phone number:</label>
                         <input type="tel" id="tel" class="input">
                     </div>
+
+                    <div class="form-item">
+                        <label for="date" id="label">Birthday</label>
+                        <input type="date" class="input">
+                    
+                    </div>
     
     
                 
                 
-                    <div>
+                    <div class="gender">
     
-                        <label for="gender" class="gender"> Gender:</label>
+                        <label for="gender" class="gender" id="gender"> Gender:</label>
+                        
                         <input type="radio" name="gender" checked value="male" id="male">
                         <label for="male">Male</label>
                         <input type="radio" name="gender" value="female"  id="female">
@@ -145,11 +152,7 @@
     
                     </div>
                     
-                    <div>
-                        <label for="date">Birthday</label>
-                        <input type="date">
                     
-                    </div>
     
                     <div>
                         <button type="submit">Submit</button>
