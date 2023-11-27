@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/landing-page.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- laptop Navbar -->
+    <nav class="laptop-navbar">
+        <a href="index.html" class="logo">
+            #
+        </a>
+        <div class="hamburger" id="show">
+            <i class="ri-menu-line"></i>
+        </div>
+        
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HIRE A PRO</a></li>
+            <li><a href="#">ABOUT US</a></li>
+        </ul>
+
+        <div class="button-wrap">
+            <a href="#" download>
+                <button type="button">
+                    Sign In
+                </button>
+            </a>
+            <a href="#" download>
+                <button type="button">
+                    Sign Up
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- mobile Navbar -->
+    <nav class="mobile-navbar">        
+        <div class="pop-out">
+            <div class="hamburger" id="hide">
+                <i class="ri-close-line"></i>
+            </div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HIRE A PRO</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+    
+            <div class="button-wrap">
+                <a href="#" download>
+                    <button type="button">
+                        Sign In
+                    </button>
+                </a>
+                <a href="#" download>
+                    <button type="button">
+                        Sign Up
+                    </button>
+                </a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <section class="signin">
+        <h1>Welcome Back</h1>
+        <div class="sign-in">
+
+            
+
+            <div class="signin-div" >
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label for="email"  id="label"> Email: </label>
+                        <input type="email" id="email" required class="input">
+                        
+                    </div>
+    
+                    <div>
+                        <label for="password"  id="label"> Password: </label>
+                        <input type="password" id="password" required class="input">
+    
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="checkbox" required>
+                        <label for="checkbox"> Remember me </label>
+    
+                    </div>
+    
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="signin-img">
+                <img src="img/abstract-lines-left-right-brain-functions-concept-analytical-vs-creativity-100041937-removebg-preview.png" alt="">
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="./Javascript/navbar.js"></script>
+</body>
+</html>

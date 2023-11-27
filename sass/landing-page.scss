@@ -2,6 +2,7 @@
 @import "./mixins";
 @import "./variables";
 @import "./signup";
+@import "./signin";
 
 *{
     box-sizing: border-box;
@@ -79,4 +80,10 @@ body{
 // SIGN-UP (including mediaquery) 
 .signup {
     @include Sign-up;
+
+
+}
+
+.signin {
+    @include Sign-in
 }
