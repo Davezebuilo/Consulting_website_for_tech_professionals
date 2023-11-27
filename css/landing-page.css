@@ -383,7 +383,8 @@ body {
   width: 60%;
   color: #f0f0f0;
   padding: 50px;
-  border: 2px solid #01ACEE;
+  border: 5px solid #01ACEE;
+  border-radius: 30px;
 }
 .signup form label {
   width: 200px;
@@ -391,7 +392,8 @@ body {
 }
 .signup form .input {
   width: 350px;
-  height: 50px;
+  height: 40px;
+  border-radius: 10px;
 }
 .signup button {
   width: 200px;

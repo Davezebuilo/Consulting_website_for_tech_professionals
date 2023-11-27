@@ -334,7 +334,9 @@
         color: $whiteColor;
         padding: 50px;
 
-        border: 2px solid $PrimaryColor;
+        border: 5px solid $PrimaryColor;
+
+        border-radius: 30px;
 
         label {
             width: 200px;
@@ -344,7 +346,8 @@
 
         .input {
             width: 350px;
-            height: 50px;
+            height: 40px;
+            border-radius: 10px;
         }
     }
 
