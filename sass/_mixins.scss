@@ -105,7 +105,148 @@
 
 // mobile navbar
 @mixin mobile-navbar{
+    display: flex;
+    padding-inline: 15px;
+    height: 65px;
+    z-index: 55;
 
+    .logo{
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .hamburger{
+        display: block;
+        transition: 200ms;
+        // display: none;
+        cursor: pointer;
+
+        i{
+            font-size: 30px;
+            color: $PrimaryColor;
+
+            &:hover{
+                color: $SecondaryColor;
+                cursor: pointer;
+            }
+        }
+    }
+
+    a, 
+    ul{
+        display: none;
+
+        button{
+        display: none;
+        }
+    }
+}
+
+@mixin for-pop-out{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 60;
+    display: block;
+    transition: 300ms ease-in-out;
+
+    .showing{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 40px;
+        display: none;
+        
+
+        .logocnt{
+
+            .logo{
+                display: none;
+            }
+        }
+    }
+
+    .pop-out{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        position: absolute;
+        right: 0;
+        background-color: $whiteColor;
+
+        .hamburger{
+            transition: 200ms;
+            cursor: pointer;
+
+            i{
+                font-size: 35px;
+                color: $PrimaryColor;
+
+                &:hover{
+                    color: $SecondaryColor;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        ul{
+            list-style: none;
+            display: grid;
+            gap: 30px;
+            text-align: center;
+
+            li{
+                font-size: 16px;
+                font-weight: 700;
+                color: $PrimaryColor;
+                position: relative;
+                list-style: none;
+    
+                a{
+                    color: $PrimaryColor;
+                    text-decoration: none;
+    
+                    &:hover{
+                        color: $SecondaryColor;
+                    }
+                }
+            }
+        }
+    
+        .button-wrap{
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 150px;
+
+            a{
+    
+                &:nth-of-type(2){
+                    button{
+                        @include filled-button;                
+                    }
+                }
+            }
+        
+            a{
+                
+                &:first-of-type{
+                    button{
+                        @include border-button;          
+                    }
+                }
+            }
+        }
+    }
 }
 
 // buttons

@@ -52,5 +52,24 @@ body{
                 }
             }
         }
+
+        @include mediaQuery(767px){
+            display: none;
+        }
+    }
+
+
+    @include mediaQuery(767px){
+        display: block;
+        @include mobile-navbar;
+    }
+}
+
+.mobile-navbar{
+    display: none;
+
+    @include mediaQuery(767px){
+        display: block;
+        @include for-pop-out;
     }
 }
