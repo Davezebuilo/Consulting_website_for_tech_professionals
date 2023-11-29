@@ -74,11 +74,18 @@ body{
         @include for-pop-out;
     }
 }
+// hero section
 
 .hero{
     @include hero-section;
 }
 
+// events section
 .events{
     @include events-section;
+}
+
+// pro-profiles
+.pro-profiles{
+    @include pro-profiles;
 }
