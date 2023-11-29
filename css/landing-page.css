@@ -477,3 +477,8 @@ body {
   -webkit-filter: blur(184px);
           filter: blur(184px);
 }
+
+.hire {
+  width: 100%;
+  height: 600px;
+}
