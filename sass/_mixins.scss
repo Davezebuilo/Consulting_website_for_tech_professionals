@@ -142,6 +142,7 @@
     }
 }
 
+// the navigation menu that pops out for mobile
 @mixin for-pop-out{
     width: 100%;
     height: 100%;
@@ -247,6 +248,8 @@
         }
     }
 }
+// Nav bar ends here
+
 
 // buttons
 
@@ -399,11 +402,12 @@
     }
 
     .shadow1{
-        @include for-shadow();
+        @include for-shadow1();
     }
 }
 
-@mixin for-shadow{
+// This is the shadow in the hero section
+@mixin for-shadow1{
     width: 600px;
     height: 400px;
     background-color: $shadowSetting;
@@ -414,7 +418,147 @@
     filter: blur(184px);
 }
 
-@mixin hire-section{
+// This is the shadow in the events section
+@mixin for-shadow2{
+    width: 400px;
+    height: 250px;
+    background-color: $shadowSetting2;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -40%;
+    filter: blur(184px);
+}
+
+// animation for the text in events "reusable"
+@mixin text-animation{
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-name: Text;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    
+    @keyframes Text {
+        0%{
+            color: $PrimaryColor;
+        }
+        50%{
+            color: $SecondaryColor;
+        }
+        100%{
+            color: $Gradient;
+        }        
+    }
+}
+
+// The events section
+@mixin events-section{
+    margin-top: 70px;
     width: 100%;
-    height: 600px;
+    height: 400px;
+    // background-color: $shadowSetting;
+    padding-inline: $Margin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .eventsTxt{
+        width: 50%;
+
+        h2{
+            color: $PrimaryColor;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 40px;
+
+            @include text-animation();
+        }
+
+        h1{
+            width: 300px;
+            font-size: 50px;
+            font-weight: 700;
+            color: $PrimaryColor;
+
+            span{
+
+                &:first-of-type{
+                    color: $SecondaryColor;
+                }
+
+                &:nth-of-type(2){
+                    font-size: 20px;
+                    color: $whiteColor;
+                    font-weight: 300;
+                }
+
+                i{
+                    color: rgb(255, 65, 65)
+                }
+            }
+        }
+
+        button{
+            @include filled-button();
+            padding: 18px 160px;
+            margin-top: 30px;
+        }
+    }
+
+    .countdwn{
+        width: 50%;
+        display: grid;
+        place-items: center;
+        position: relative;
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 200px;
+            list-style: none;
+            // border: 1px solid $backgroundColor-v;
+            background-color: $backgroundColor-alt;
+            border-radius: 10px;
+
+            li{
+                font-size: 65px;
+                font-weight: 500;
+                color: $SecondaryColor;
+            }
+        }
+
+        div{
+            color: $SecondaryColor;
+            position: absolute;
+            font-size: 14px;
+
+            &:first-of-type{
+                bottom: 22%;
+                left: 26%;
+            }
+
+            &:nth-of-type(2){
+                bottom: 22%;
+                left: 40%;
+            }
+
+            &:nth-of-type(3){
+                bottom: 22%;
+                right: 38%;
+            }
+
+            &:nth-of-type(4){
+                bottom: 22%;
+                right: 24%;
+            }
+        }
+    }
+
+    
+    .shadow2{
+        @include for-shadow2();
+    }
 }
