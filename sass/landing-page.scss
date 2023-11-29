@@ -78,3 +78,7 @@ body{
 .hero{
     @include hero-section;
 }
+
+.hire{
+    @include hire-section;
+}
