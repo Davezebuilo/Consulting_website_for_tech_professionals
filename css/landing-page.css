@@ -762,7 +762,7 @@ body {
 
 .categories {
   width: 100%;
-  height: 950px;
+  height: 1000px;
   padding-inline: 120px;
   margin-top: 40px;
   display: -webkit-box;
@@ -884,4 +884,66 @@ body {
   display: none;
   -webkit-transition: 300ms;
   transition: 300ms;
+}
+
+.Trust {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(14, 42, 84, 0.2588235294);
+  padding-inline: 120px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+.Trust h2 {
+  color: #01ACEE;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 250px;
+}
+.Trust h2 span {
+  color: #C3297C;
+}
+.Trust .companys {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 200px;
+  margin-top: -30px;
+}
+.Trust .companys .linkedin,
+.Trust .companys .meta,
+.Trust .companys .apple,
+.Trust .companys .microsoft {
+  font-size: 50px;
+  color: #5a85c5;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.Trust .companys .linkedin p,
+.Trust .companys .meta p,
+.Trust .companys .apple p,
+.Trust .companys .microsoft p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.Trust svg {
+  position: absolute;
+  z-index: -1;
+  left: 15%;
+  opacity: 0.1;
 }
