@@ -469,108 +469,124 @@
     // margin-top: 70px;
     width: 100%;
     height: 400px;
-    // background-color: $shadowSetting;
+    // background-color: $backgroundColor-alt;
     padding-inline: $Margin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
 
-    .eventsTxt{
-        width: 50%;
+    h2{
+        color: $PrimaryColor;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+        text-align: center;
 
-        h2{
-            color: $PrimaryColor;
-            font-size: 25px;
-            font-weight: 600;
-            margin-bottom: 40px;
-
-            @include text-animation();
-        }
-
-        h1{
-            width: 300px;
-            font-size: 50px;
-            font-weight: 700;
-            color: $PrimaryColor;
-
-            span{
-
-                &:first-of-type{
-                    color: $SecondaryColor;
-                }
-
-                &:nth-of-type(2){
-                    font-size: 20px;
-                    color: $whiteColor;
-                    font-weight: 300;
-                }
-
-                i{
-                    color: rgb(255, 65, 65)
-                }
-            }
-        }
-
-        button{
-            @include filled-button();
-            padding: 18px 160px;
-            margin-top: 30px;
+        span{
+            color: $SecondaryColor;
         }
     }
 
-    .countdwn{
-        width: 50%;
+    .eventCarousel{
+        padding-inline: 10px;
+        width: 1275px;
+        height: 300px;
+        // background-color: aqua;
         display: grid;
         place-items: center;
-        position: relative;
+        grid-gap: 30px;
+        grid-template-columns: repeat(6, 1fr);
+        overflow: scroll;
 
-        ul{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 400px;
-            height: 200px;
-            list-style: none;
-            // border: 1px solid $backgroundColor-v;
-            background-color: $backgroundColor-alt;
-            border-radius: 10px;
-
-            li{
-                font-size: 65px;
-                font-weight: 500;
-                color: $SecondaryColor;
-            }
+        &::-webkit-scrollbar{
+            display: none;
         }
 
-        div{
-            color: $SecondaryColor;
-            position: absolute;
-            font-size: 14px;
+        .eventCard{
+            width: 400px;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: 300ms ease;
 
-            &:first-of-type{
-                bottom: 22%;
-                left: 26%;
+            &:hover{
+                transform: scale(0.98);
+                border: 2px solid $SecondaryColor;
+                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.329);
+
+                .cardimg{
+
+                    img{
+                        transform: scale(1.03);
+                    }
+                }
+
+                .eventcardTxt{
+                    background-color: rgba(30, 29, 29, 0.33);
+                }
             }
 
-            &:nth-of-type(2){
-                bottom: 22%;
-                left: 40%;
+            .cardimg{
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    transition: 300ms;
+                }
             }
 
-            &:nth-of-type(3){
-                bottom: 22%;
-                right: 38%;
-            }
+            .eventcardTxt{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.755), rgba(0, 0, 0, 0));
+                top: 0;
+                padding: 10px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                
 
-            &:nth-of-type(4){
-                bottom: 22%;
-                right: 24%;
+                h1{
+                    color: $PrimaryColor;
+                    font-size: 25px;
+                    font-weight: 700;
+                    width: 150px;
+                    margin-bottom: 5px;
+
+                    span{
+                        color: $SecondaryColor;
+                    }
+                }
+
+                >span{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $PrimaryColor;
+
+                    i{
+                        color: rgb(192, 29, 29);
+                    }
+                }
+
+                p{
+                    color: $PrimaryColor;
+                    margin-top: 5px;
+
+                    i{
+                        color: $SecondaryColor;
+                    }
+                }
             }
         }
     }
 
-    
     .shadow2{
         @include for-shadow2();
     }
@@ -585,7 +601,7 @@
     padding-inline: $Margin;
     display: grid;
     place-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     // background-color: aqua;
 
 
