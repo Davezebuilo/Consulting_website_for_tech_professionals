@@ -604,6 +604,11 @@
     margin-bottom: 100px;
     // background-color: aqua;
 
+    
+    button{
+        @include border-button();
+        margin-top: 40px;
+    }
 
     h2{
         color: $PrimaryColor;
