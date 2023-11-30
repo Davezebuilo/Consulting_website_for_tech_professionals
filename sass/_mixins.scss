@@ -917,3 +917,24 @@
         opacity: 0.1;
     }
 }
+
+// About us
+@mixin aboutUs{
+    width: 100%;
+    height: 600px;
+    padding-inline: $Margin;
+    margin-top: 50px;
+
+    h2{
+        color: $PrimaryColor;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+        text-align: center;
+
+        span{
+            color: $SecondaryColor;
+        }
+    }
+}
