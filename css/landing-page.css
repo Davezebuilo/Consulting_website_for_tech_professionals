@@ -482,142 +482,115 @@ body {
   width: 100%;
   height: 400px;
   padding-inline: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
 }
-.events .eventsTxt {
-  width: 50%;
-}
-.events .eventsTxt h2 {
+.events h2 {
   color: #01ACEE;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 40px;
-  -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-name: Text;
-          animation-name: Text;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
+  text-transform: capitalize;
+  text-align: center;
 }
-@-webkit-keyframes Text {
-  0% {
-    color: #01ACEE;
-  }
-  50% {
-    color: #C3297C;
-  }
-  100% {
-    color: linear-gradient(to top left, #01ACEE, #0AE8F5);
-  }
-}
-@keyframes Text {
-  0% {
-    color: #01ACEE;
-  }
-  50% {
-    color: #C3297C;
-  }
-  100% {
-    color: linear-gradient(to top left, #01ACEE, #0AE8F5);
-  }
-}
-.events .eventsTxt h1 {
-  width: 300px;
-  font-size: 50px;
-  font-weight: 700;
-  color: #01ACEE;
-}
-.events .eventsTxt h1 span:first-of-type {
+.events h2 span {
   color: #C3297C;
 }
-.events .eventsTxt h1 span:nth-of-type(2) {
-  font-size: 20px;
-  color: #f0f0f0;
-  font-weight: 300;
-}
-.events .eventsTxt h1 span i {
-  color: rgb(255, 65, 65);
-}
-.events .eventsTxt button {
-  padding: 12px 30px;
-  background-color: #01ACEE;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  color: #f0f0f0;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  padding: 18px 160px;
-  margin-top: 30px;
-}
-.events .eventsTxt button:hover {
-  cursor: pointer;
-  background-color: #C3297C;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-.events .countdwn {
-  width: 50%;
+.events .eventCarousel {
+  padding-inline: 10px;
+  width: 1275px;
+  height: 300px;
   display: -ms-grid;
   display: grid;
   place-items: center;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: scroll;
+}
+.events .eventCarousel::-webkit-scrollbar {
+  display: none;
+}
+.events .eventCarousel .eventCard {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.events .eventCarousel .eventCard:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  border: 2px solid #C3297C;
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.329);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.329);
+}
+.events .eventCarousel .eventCard:hover .cardimg img {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+.events .eventCarousel .eventCard:hover .eventcardTxt {
+  background-color: rgba(30, 29, 29, 0.33);
+}
+.events .eventCarousel .eventCard .cardimg {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
-.events .countdwn ul {
+.events .eventCarousel .eventCard .cardimg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.events .eventCarousel .eventCard .eventcardTxt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(0, 0, 0, 0.755)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.755), rgba(0, 0, 0, 0));
+  top: 0;
+  padding: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 400px;
-  height: 200px;
-  list-style: none;
-  background-color: #0e2a54;
-  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-.events .countdwn ul li {
-  font-size: 65px;
+.events .eventCarousel .eventCard .eventcardTxt h1 {
+  color: #01ACEE;
+  font-size: 25px;
+  font-weight: 700;
+  width: 150px;
+  margin-bottom: 5px;
+}
+.events .eventCarousel .eventCard .eventcardTxt h1 span {
+  color: #C3297C;
+}
+.events .eventCarousel .eventCard .eventcardTxt > span {
+  font-size: 20px;
   font-weight: 500;
+  color: #01ACEE;
+}
+.events .eventCarousel .eventCard .eventcardTxt > span i {
+  color: rgb(192, 29, 29);
+}
+.events .eventCarousel .eventCard .eventcardTxt p {
+  color: #01ACEE;
+  margin-top: 5px;
+}
+.events .eventCarousel .eventCard .eventcardTxt p i {
   color: #C3297C;
-}
-.events .countdwn div {
-  color: #C3297C;
-  position: absolute;
-  font-size: 14px;
-}
-.events .countdwn div:first-of-type {
-  bottom: 22%;
-  left: 26%;
-}
-.events .countdwn div:nth-of-type(2) {
-  bottom: 22%;
-  left: 40%;
-}
-.events .countdwn div:nth-of-type(3) {
-  bottom: 22%;
-  right: 38%;
-}
-.events .countdwn div:nth-of-type(4) {
-  bottom: 22%;
-  right: 24%;
 }
 .events .shadow2 {
   width: 400px;
@@ -640,7 +613,7 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 .pro-profiles h2 {
   color: #01ACEE;
