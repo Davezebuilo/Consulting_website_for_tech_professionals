@@ -759,3 +759,129 @@ body {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+
+.categories {
+  width: 100%;
+  height: 950px;
+  padding-inline: 120px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.categories h2 {
+  color: #01ACEE;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.categories h2 span {
+  color: #C3297C;
+}
+.categories > p {
+  color: #01ACEE;
+  width: 400px;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+  line-height: 25px;
+}
+.categories > p span {
+  color: #C3297C;
+  font-weight: 700;
+}
+.categories .cateGrid {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.categories .cateGrid .gridCard {
+  width: 400px;
+  height: 350px;
+  padding: 30px 25px;
+  display: -ms-grid;
+  display: grid;
+  border-radius: 10px;
+  border: 1px solid #5a85c5;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.categories .cateGrid .gridCard:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  border: 1px solid #C3297C;
+}
+.categories .cateGrid .gridCard:hover > i {
+  color: #C3297C;
+}
+.categories .cateGrid .gridCard:hover h3 {
+  color: #C3297C;
+}
+.categories .cateGrid .gridCard:hover p {
+  color: #C3297C;
+}
+.categories .cateGrid .gridCard:hover > span a {
+  display: block;
+}
+.categories .cateGrid .gridCard:hover > span i {
+  display: block;
+}
+.categories .cateGrid .gridCard > i {
+  font-size: 60px;
+  color: #5a85c5;
+}
+.categories .cateGrid .gridCard h3 {
+  color: #5a85c5;
+  font-size: 25px;
+  font-weight: 500;
+}
+.categories .cateGrid .gridCard p {
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #5a85c5;
+  width: 300px;
+}
+.categories .cateGrid .gridCard > span {
+  width: 100%;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 230px;
+}
+.categories .cateGrid .gridCard > span a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #01ACEE;
+  display: none;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+.categories .cateGrid .gridCard > span i {
+  font-size: 14px;
+  color: #01ACEE;
+  display: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
