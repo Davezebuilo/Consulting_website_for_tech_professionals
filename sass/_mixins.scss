@@ -28,18 +28,17 @@
     }
 
     .logo{
-        font-size: 30px;
-        font-weight: 700;
-        color: $PrimaryColor;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-        animation-duration: 5s;
-        // animation-delay: 2s;
-        animation-name: changer;
-        animation-timing-function: cubic-bezier(1, 0, 0, 1);
-        animation-iteration-count: infinite;
-        animation-direction: normal;
+        
+        .logoImg{
+            width: 90px;
+            height: 40px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
     }
 
     ul{
@@ -143,6 +142,7 @@
     }
 }
 
+// the navigation menu that pops out for mobile
 @mixin for-pop-out{
     width: 100%;
     height: 100%;
@@ -248,6 +248,8 @@
         }
     }
 }
+// Nav bar ends here
+
 
 // buttons
 
@@ -284,7 +286,629 @@
 
     &:hover{
         cursor: pointer;
-        background-color: $PrimaryColor-v;
+        background-color: $SecondaryColor;
         transform: scale(1.05);
+    }
+}
+
+// hero section on landing page
+@mixin hero-section{
+    width: 100%;
+    height: 600px;
+    padding-inline: $Margin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+
+    .leftSide{
+        width: 50%;
+        height: 100%;
+        // background-color: brown;
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        .heroTxt{
+
+            h1{
+                font-size: 50px;
+                font-weight: 700;
+                width: 650px;
+                color: $PrimaryColor;
+                margin-bottom: 40px;
+
+                span{
+                    color: $SecondaryColor;
+                }
+            }
+
+            p{
+
+                color: $backgroundColor-v;
+                font-size: 18px;
+                font-weight: 100;
+                margin-bottom: 30px;
+
+                span{
+                    color: $PrimaryColor;
+                }
+            }
+
+            ul{
+                display: grid;
+                gap: 30px;
+                list-style: none;
+                // list-style-image: url(../img/checkbox-circle-fill.png);
+
+                li{
+                    height: 20px;
+                    color: $whiteColor;
+                    font-size: 14px;
+                    font-weight: 100;
+
+                    span{
+                        color: $SecondaryColor;
+                    }
+
+                    i{
+                        font-size: 16px;
+                        color: $SecondaryColor;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .CTA{
+            display: flex;
+            gap: 20px;
+
+            a{
+                text-decoration: none;
+
+                button{
+                    @include filled-button();
+                }
+
+                &:nth-of-type(2){
+                    button{
+                        @include border-button();
+                    }
+                }
+            }
+        }
+    }
+
+    .rightSide{
+        width: 50%;
+        height: 100%;
+        // background-color: aqua;
+        display: grid;
+        place-items: center;
+
+        .heroImg{
+            width: 550px;
+            height: 550px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .shadow1{
+        @include for-shadow1();
+    }
+}
+
+// shadows
+// This is the shadow in the hero section
+@mixin for-shadow1{
+    width: 600px;
+    height: 400px;
+    background-color: $shadowSetting;
+    position: fixed;
+    z-index: -1;
+    right: 3%;
+    bottom: -10%;
+    filter: blur(184px);
+}
+
+// This is the shadow in the events section
+@mixin for-shadow2{
+    width: 400px;
+    height: 250px;
+    background-color: $shadowSetting2;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -40%;
+    filter: blur(184px);
+}
+
+// This is the shadow in the pro-profile section
+@mixin for-shadow3{
+    width: 400px;
+    height: 250px;
+    background-color: green;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -40%;
+    filter: blur(184px);
+}
+
+// animation for the text in events "reusable"
+@mixin text-animation{
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-name: Text;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    
+    @keyframes Text {
+        0%{
+            color: $PrimaryColor;
+        }
+        50%{
+            color: $SecondaryColor;
+        }
+        100%{
+            color: $Gradient;
+        }        
+    }
+}
+
+// The events section
+@mixin events-section{
+    // margin-top: 70px;
+    width: 100%;
+    height: 400px;
+    // background-color: $backgroundColor-alt;
+    padding-inline: $Margin;
+    position: relative;
+
+    h2{
+        color: $PrimaryColor;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+        text-align: center;
+
+        span{
+            color: $SecondaryColor;
+        }
+    }
+
+    .eventCarousel{
+        padding-inline: 10px;
+        width: 1275px;
+        height: 300px;
+        // background-color: aqua;
+        display: grid;
+        place-items: center;
+        grid-gap: 30px;
+        grid-template-columns: repeat(6, 1fr);
+        overflow: scroll;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .eventCard{
+            width: 400px;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: 300ms ease;
+
+            &:hover{
+                transform: scale(0.98);
+                border: 2px solid $SecondaryColor;
+                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.329);
+
+                .cardimg{
+
+                    img{
+                        transform: scale(1.03);
+                    }
+                }
+
+                .eventcardTxt{
+                    background-color: rgba(30, 29, 29, 0.33);
+                }
+            }
+
+            .cardimg{
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    transition: 300ms;
+                }
+            }
+
+            .eventcardTxt{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.755), rgba(0, 0, 0, 0));
+                top: 0;
+                padding: 10px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                
+
+                h1{
+                    color: $PrimaryColor;
+                    font-size: 25px;
+                    font-weight: 700;
+                    width: 150px;
+                    margin-bottom: 5px;
+
+                    span{
+                        color: $SecondaryColor;
+                    }
+                }
+
+                >span{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $PrimaryColor;
+
+                    i{
+                        color: rgb(192, 29, 29);
+                    }
+                }
+
+                p{
+                    color: $PrimaryColor;
+                    margin-top: 5px;
+
+                    i{
+                        color: $SecondaryColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .shadow2{
+        @include for-shadow2();
+    }
+}
+
+// pro-profiles
+@mixin pro-profiles{
+    width: 100%;
+    height: 650px;
+    margin-top: 90px;
+    position: relative;
+    padding-inline: $Margin;
+    display: grid;
+    place-items: center;
+    margin-bottom: 100px;
+    // background-color: aqua;
+
+
+    h2{
+        color: $PrimaryColor;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+        text-align: center;
+
+        span{
+            color: $SecondaryColor;
+        }
+    }
+
+    p{
+        color: $PrimaryColor;
+        width: 300px;
+        font-size: 16px;
+        font-weight: 100;
+        text-align: center;
+        line-height: 25px;
+        margin-top: -35px;
+    }
+    
+    // carousel for the profiles on the landing
+    .profiles-carousel{
+        display: grid;
+        place-items: center;
+        grid-gap: 30px;
+        grid-template-columns: repeat(6, 1fr);
+        width: 1275px;
+        height: 430px;
+        overflow: scroll;
+        margin-top: 30px;
+        // background-color: brown;
+        padding-inline: 10px;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .profile-card{
+            width: 350px;
+            height: 400px;
+            border: 1px solid $backgroundColor-alt;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            gap: 30px;
+            transition: 300ms ease;
+
+            &:hover{
+                box-shadow: 0 2px 20px rgba(0, 0, 0, 0.197);
+                border: 1px solid $SecondaryColor;
+                transform: scale(0.95);
+            }
+
+            .profileImg{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .profile-cardtxt{
+                display: grid;
+                place-items: center;
+                grid-gap: 30px;
+
+                h4{
+                    font-weight: 200;
+                    font-size: 20px;
+                    color: $PrimaryColor;
+
+                    span{
+                        color: $SecondaryColor;
+                        font-weight: 500;
+                    }
+                }
+
+                p{
+                    font-size: 14px;
+                    color: $backgroundColor-v;
+                }
+
+                .cardButtons{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    button{
+
+                        &:first-of-type{
+                            @include filled-button();
+                            font-size: 14px;
+                            padding: 10px 20px;
+                        }
+    
+                        &:nth-of-type(2){
+                            @include border-button();
+                            font-size: 14px;
+                            padding: 10px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// categories section
+@mixin categories{
+    width: 100%;
+    height: 1000px;
+    padding-inline: $Margin;
+    margin-top: 40px;
+    // background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        color: $PrimaryColor;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+        text-align: center;
+
+        span{
+            color: $SecondaryColor;
+        }
+    }
+
+    >p{
+        color: $PrimaryColor;
+        width: 400px;
+        font-size: 16px;
+        font-weight: 100;
+        text-align: center;
+        line-height: 25px;
+
+        span{
+            color: $SecondaryColor;
+            font-weight: 700;
+        }
+    }
+
+    .cateGrid{
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .gridCard{
+            width: 400px;
+            height: 350px;
+            // background-color: aqua;
+            padding: 30px 25px;
+            display: grid;
+            border-radius: 10px;
+            border: 1px solid $backgroundColor-v;
+            transition: 300ms;
+
+            &:hover{
+                transform: scale(0.95);
+                border: 1px solid $SecondaryColor;
+
+                >i{
+                    color: $SecondaryColor;
+                }
+
+                h3{
+                    color: $SecondaryColor;
+                }
+
+                p{
+                    color: $SecondaryColor;
+                }
+
+                >span{
+
+                    a{
+                        display: block;
+                    }
+
+                    i{
+                        display: block;
+                    }
+                }
+            }
+
+            >i{
+                font-size: 60px;
+                color: $backgroundColor-v;
+            }
+
+            h3{
+                color: $backgroundColor-v;
+                font-size: 25px;
+                font-weight: 500;
+                // margin-top: 30px;
+            }
+
+            p{
+                line-height: 25px;
+                font-size: 16px;
+                font-weight: 300;
+                color: $backgroundColor-v;
+                // margin-top: 30px;
+                width: 300px;
+            }
+
+            >span{
+                width: 100%;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 230px;
+
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: $PrimaryColor;
+                    display: none;
+                    transition: 500ms;
+                }
+
+                i{
+                    font-size: 14px;
+                    color: $PrimaryColor;
+                    display: none;
+                    transition: 300ms;
+                }
+            }
+        }
+    }
+}
+
+// trust section
+@mixin trust{
+    width: 100%;
+    height: 300px;
+    background-color: #0e2a5442;
+    padding-inline: $Margin;
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+    position: relative;
+
+    
+    h2{
+        color: $PrimaryColor;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-align: center;
+        text-transform: capitalize;
+        width: 250px;
+
+        span{
+            color: $SecondaryColor;
+        }
+    }
+
+    .companys{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+        margin-top: -30px;
+
+        .linkedin,
+        .meta,
+        .apple,
+        .microsoft{
+            font-size: 50px;
+            color: $backgroundColor-v;
+            display: grid;
+            place-items: center;
+
+            p{
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    svg{
+        position: absolute;
+        z-index: -1;
+        left: 15%;
+        opacity: 0.1;
     }
 }
