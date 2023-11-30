@@ -90,6 +90,12 @@ body{
     @include pro-profiles;
 }
 
+// categories
 .categories{
     @include categories;
+}
+
+// trust
+.Trust{
+    @include trust;
 }

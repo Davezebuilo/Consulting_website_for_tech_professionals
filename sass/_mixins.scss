@@ -725,7 +725,7 @@
 // categories section
 @mixin categories{
     width: 100%;
-    height: 950px;
+    height: 1000px;
     padding-inline: $Margin;
     margin-top: 40px;
     // background-color: aqua;
@@ -851,5 +851,64 @@
                 }
             }
         }
+    }
+}
+
+// trust section
+@mixin trust{
+    width: 100%;
+    height: 300px;
+    background-color: #0e2a5442;
+    padding-inline: $Margin;
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+    position: relative;
+
+    
+    h2{
+        color: $PrimaryColor;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-align: center;
+        text-transform: capitalize;
+        width: 250px;
+
+        span{
+            color: $SecondaryColor;
+        }
+    }
+
+    .companys{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+        margin-top: -30px;
+
+        .linkedin,
+        .meta,
+        .apple,
+        .microsoft{
+            font-size: 50px;
+            color: $backgroundColor-v;
+            display: grid;
+            place-items: center;
+
+            p{
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    svg{
+        position: absolute;
+        z-index: -1;
+        left: 15%;
+        opacity: 0.1;
     }
 }
