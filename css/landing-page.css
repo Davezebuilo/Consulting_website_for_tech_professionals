@@ -1236,7 +1236,7 @@ body {
 
 .getinTouch {
   width: 100%;
-  height: 650px;
+  height: 750px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1244,8 +1244,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-inline: 120px;
+  padding-top: 80px;
   position: relative;
-  margin-top: 60px;
   gap: 40px;
 }
 .getinTouch h2 {
@@ -1256,7 +1256,7 @@ body {
   text-transform: capitalize;
   text-align: center;
   position: absolute;
-  top: 0;
+  top: 15%;
   left: 45%;
 }
 .getinTouch h2 span {
