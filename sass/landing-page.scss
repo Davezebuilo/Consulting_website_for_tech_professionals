@@ -99,3 +99,18 @@ body{
 .Trust{
     @include trust;
 }
+
+// about us
+.aboutUs{
+    @include aboutUs;
+}
+
+// get in touch
+.getinTouch{
+    @include getinTouch;
+}
+
+// footer
+.footer{
+    @include footer;
+}
