@@ -3,3 +3,15 @@
 @import "./mixins";
 @import "./mixin-hire";
 
+.hero{
+    margin-bottom: 90px;
+    // background-color: aqua;
+    position: relative;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+
+    .hiringForm{
+        @include hero-hire;
+    }
+}
