@@ -9,7 +9,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.hero .hiringForm {
+.hero .form1 {
   width: 50%;
   height: auto;
   display: -webkit-box;
@@ -22,14 +22,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-block: 40px;
+  display: block;
 }
-.hero .hiringForm h3 {
+.hero .form1 h3 {
   text-align: center;
   color: #01ACEE;
 }
-.hero .hiringForm form {
-  width: 450px;
+.hero .form1 form {
+  width: 350px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,16 +46,19 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
+  margin-bottom: 90px;
+  margin-left: 130px;
   gap: 30px;
   padding-inline: 50px;
+  padding-bottom: 50px;
 }
-.hero .hiringForm form .option {
+.hero .form1 form .option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
-.hero .hiringForm form .option input[type=checkbox] {
+.hero .form1 form .option input[type=checkbox] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -60,15 +67,15 @@
   border-radius: 7px;
   border: 1.5px solid #01ACEE;
 }
-.hero .hiringForm form .option input[type=checkbox]:checked {
+.hero .form1 form .option input[type=checkbox]:checked {
   background-color: #C3297C;
 }
-.hero .hiringForm form .option p {
+.hero .form1 form .option p {
   font-size: 20px;
   font-weight: 500;
   color: #01ACEE;
 }
-.hero .hiringForm form button {
+.hero .form1 form button {
   padding: 12px 30px;
   background-color: #01ACEE;
   font-size: 16px;
@@ -80,7 +87,112 @@
   transition: 300ms;
   margin-top: 30px;
 }
-.hero .hiringForm form button:hover {
+.hero .form1 form button:hover {
+  cursor: pointer;
+  background-color: #C3297C;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.hero .form2 {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-block: 40px;
+  display: none;
+}
+.hero .form2 h3 {
+  text-align: center;
+  color: #01ACEE;
+}
+.hero .form2 form {
+  width: 350px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  margin-left: 130px;
+  gap: 30px;
+  padding-inline: 50px;
+  padding-bottom: 50px;
+}
+.hero .form2 form .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.hero .form2 form .option input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+  border: 1.5px solid #01ACEE;
+}
+.hero .form2 form .option input[type=checkbox]:checked {
+  background-color: #C3297C;
+}
+.hero .form2 form .option p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #01ACEE;
+}
+.hero .form2 form button {
+  padding: 12px 30px;
+  background-color: #01ACEE;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #f0f0f0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  margin-top: 30px;
+}
+.hero .form2 form button:hover {
+  cursor: pointer;
+  background-color: #C3297C;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.hero button {
+  padding: 12px 30px;
+  background-color: #01ACEE;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #f0f0f0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  position: absolute;
+  bottom: 20%;
+  right: 23%;
+  padding-inline: 90px;
+}
+.hero button:hover {
   cursor: pointer;
   background-color: #C3297C;
   -webkit-transform: scale(1.05);
