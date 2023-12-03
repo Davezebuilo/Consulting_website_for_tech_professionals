@@ -11,7 +11,21 @@
     justify-content: center;
     align-items: center;
 
-    .hiringForm{
+    .form1{
         @include hero-hire;
+        display: block;
+    }
+
+    .form2{
+        @include hero-hire;
+        display: none;
+    }
+
+    button{
+        @include filled-button;
+        position: absolute;
+        bottom: 20%;
+        right: 23%;
+        padding-inline: 90px;
     }
 }
