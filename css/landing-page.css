@@ -350,6 +350,19 @@ body {
           justify-content: center;
   margin-top: 110px;
 }
+.hero h2 {
+  color: #01ACEE;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+.hero h2 span {
+  color: #C3297C;
+}
 .hero .leftSide {
   width: 50%;
   height: 100%;

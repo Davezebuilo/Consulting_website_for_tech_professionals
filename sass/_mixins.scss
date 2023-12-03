@@ -301,6 +301,21 @@
     justify-content: center;
     margin-top: 110px;
 
+    h2{
+        color: $PrimaryColor;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+        text-align: center;
+        position: absolute;
+        top: 0;
+
+        span{
+            color: $SecondaryColor;
+        }
+    }
+
     .leftSide{
         width: 50%;
         height: 100%;
