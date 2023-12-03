@@ -14,3 +14,12 @@ const closeNav = () => {
 };
 // Hiding Mobile Nav
 menuCloseBtn.addEventListener("click", closeNav);
+
+const form1 = document.querySelector('.form1'),
+form2 = document.querySelector('.form2'),
+button = document.querySelector('#togl');
+
+button.addEventListener('click', function(){
+    form1.style.display = "none";
+    form2.style.display = "block";
+})

@@ -2,3 +2,30 @@
 @import"./mediaQuery";
 @import "./mixins";
 @import "./mixin-hire";
+
+.hero{
+    margin-bottom: 90px;
+    // background-color: aqua;
+    position: relative;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+
+    .form1{
+        @include hero-hire;
+        display: block;
+    }
+
+    .form2{
+        @include hero-hire;
+        display: none;
+    }
+
+    button{
+        @include filled-button;
+        position: absolute;
+        bottom: 20%;
+        right: 23%;
+        padding-inline: 90px;
+    }
+}
