@@ -3,3 +3,115 @@
 @import "./variables";
 @import "./mixin-profile";
 
+.profileMain{
+    width: 100%;
+    height: auto;
+    margin-top: 130px;
+    padding-inline: 120px;
+    display: flex;
+    position: relative;
+
+    .profilePic{
+        width: 30%;
+        height: auto;
+        // background-color: aqua;
+        position: sticky;
+        top: 0;
+
+        .profile-card{
+            @include profile-cards;
+            border: none;
+            outline: none;
+            position: sticky;
+            top: 20%;
+    
+            &:hover{
+                box-shadow:none;
+                border: none;
+                transform: none;
+            }
+    
+            .profile-cardtxt{
+                grid-gap: 20px;
+            }
+        }
+    }
+
+        
+    .Bio-posts{
+        width: 70%;
+        height: auto;
+        // background-color: brown;
+        padding: 30px 50px;
+        border-left: 1px solid $backgroundColor-alt;
+
+        .bio{
+
+            h5{
+                color: $SecondaryColor;
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            p{
+                line-height: 25px;
+                font-size: 16px;
+                font-weight: 500;
+                color: $backgroundColor-v
+            }
+        }
+
+        .featPost{
+            h5{
+                color: $PrimaryColor;
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                margin-top: 40px;
+            }
+
+            .postsgrid{
+                width: 730px;
+                height: auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                place-items: center;
+                gap: 20px;
+
+                .postCard{
+                    width: 350px;
+                    height: 250px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    position: relative;
+                    transition: 300ms ease;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        display: none;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #191919a2;
+                    }
+
+                    &:hover{
+                        transform: scale(0.97);
+                        box-shadow: 0 0 25px rgba(0, 0, 0, 0.336);
+
+                        &::before{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
