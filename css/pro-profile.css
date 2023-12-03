@@ -1,0 +1,206 @@
+.profileMain {
+  width: 100%;
+  height: auto;
+  margin-top: 130px;
+  padding-inline: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.profileMain .profilePic {
+  width: 30%;
+  height: auto;
+  position: sticky;
+  top: 0;
+}
+.profileMain .profilePic .profile-card {
+  width: 350px;
+  height: 400px;
+  border: 1px solid #0e2a54;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  gap: 30px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  padding-block: 15px;
+  border: none;
+  outline: none;
+  position: sticky;
+  top: 20%;
+}
+.profileMain .profilePic .profile-card:hover {
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.197);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.197);
+  border: 1px solid #C3297C;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.profileMain .profilePic .profile-card .profileImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileMain .profilePic .profile-card .profileImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profileMain .profilePic .profile-card .profile-cardtxt {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  grid-gap: 30px;
+}
+.profileMain .profilePic .profile-card .profile-cardtxt h4 {
+  font-weight: 200;
+  font-size: 20px;
+  color: #01ACEE;
+}
+.profileMain .profilePic .profile-card .profile-cardtxt h4 span {
+  color: #C3297C;
+  font-weight: 500;
+}
+.profileMain .profilePic .profile-card .profile-cardtxt p {
+  font-size: 14px;
+  color: #5a85c5;
+}
+.profileMain .profilePic .profile-card .profile-cardtxt .cardButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.profileMain .profilePic .profile-card .profile-cardtxt .cardButtons button:first-of-type {
+  padding: 12px 30px;
+  background-color: #01ACEE;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #f0f0f0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.profileMain .profilePic .profile-card .profile-cardtxt .cardButtons button:first-of-type:hover {
+  cursor: pointer;
+  background-color: #C3297C;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.profileMain .profilePic .profile-card .profile-cardtxt .cardButtons button:nth-of-type(2) {
+  padding: 12px 30px;
+  font-size: 16px;
+  background: none;
+  outline: none;
+  border: 1px solid #01ACEE;
+  border-radius: 5px;
+  color: #01ACEE;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.profileMain .profilePic .profile-card .profile-cardtxt .cardButtons button:nth-of-type(2):hover {
+  cursor: pointer;
+  background-color: #0AE8F5;
+  background-color: rgba(1, 171, 239, 0.3);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.profileMain .profilePic .profile-card:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  -webkit-transform: none;
+          transform: none;
+}
+.profileMain .profilePic .profile-card .profile-cardtxt {
+  grid-gap: 20px;
+}
+.profileMain .Bio-posts {
+  width: 70%;
+  height: auto;
+  padding: 30px 50px;
+  border-left: 1px solid #0e2a54;
+}
+.profileMain .Bio-posts .bio h5 {
+  color: #C3297C;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.profileMain .Bio-posts .bio p {
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #5a85c5;
+}
+.profileMain .Bio-posts .featPost h5 {
+  color: #01ACEE;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.profileMain .Bio-posts .featPost .postsgrid {
+  width: 730px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 20px;
+}
+.profileMain .Bio-posts .featPost .postsgrid .postCard {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.profileMain .Bio-posts .featPost .postsgrid .postCard img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profileMain .Bio-posts .featPost .postsgrid .postCard::before {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 25, 25, 0.6352941176);
+}
+.profileMain .Bio-posts .featPost .postsgrid .postCard:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.336);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.336);
+}
+.profileMain .Bio-posts .featPost .postsgrid .postCard:hover::before {
+  display: block;
+}
