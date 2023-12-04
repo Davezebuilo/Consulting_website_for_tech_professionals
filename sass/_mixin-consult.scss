@@ -1,3 +1,70 @@
 @import "./variables";
 @import"./mediaQuery";
-@import "./mixins"
+@import "./mixins";
+
+@mixin consult{
+    .Bio-posts{
+
+        .form{
+
+            h2{
+                color: $PrimaryColor;
+                font-size: 30px;
+                font-weight: 600;
+                margin-bottom: 40px;
+                text-transform: capitalize;
+                text-align: center;
+        
+                span{
+                    color: $SecondaryColor;
+                }
+        }
+    
+            form{
+                // background-color: rgb(136, 140, 140);
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+
+                .input{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    input{
+                        @include inputs();
+                        margin-top: 5px;
+                    }
+                }
+
+                &:nth-of-type(2){
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    input{
+                        @include inputs();
+                        margin-top: -5px;
+                        width: 755px;
+                    }
+
+                    button{
+                        @include filled-button();
+                        margin-top: 30px;
+                        margin-right: 20px;
+                        width: 90%;
+                        align-self: center;
+                    }
+                }
+            }
+
+            h5{
+                font-size: 20px;
+                font-weight: 700;
+                color: $PrimaryColor;
+                margin-top: 60px;
+            }
+        }
+    }
+}

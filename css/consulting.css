@@ -1,0 +1,163 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #092145;
+}
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.profileMain .Bio-posts .form h2 {
+  color: #01ACEE;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.profileMain .Bio-posts .form h2 span {
+  color: #C3297C;
+}
+.profileMain .Bio-posts .form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.profileMain .Bio-posts .form form .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.profileMain .Bio-posts .form form .input input {
+  padding: 10px;
+  height: 60px;
+  width: 350px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  color: #5a85c5;
+  border-bottom: 1px solid #5a85c5;
+  background: none;
+  margin-top: 5px;
+}
+.profileMain .Bio-posts .form form .input input::-webkit-input-placeholder {
+  color: #5a85c5;
+}
+.profileMain .Bio-posts .form form .input input::-moz-placeholder {
+  color: #5a85c5;
+}
+.profileMain .Bio-posts .form form .input input:-ms-input-placeholder {
+  color: #5a85c5;
+}
+.profileMain .Bio-posts .form form .input input::-ms-input-placeholder {
+  color: #5a85c5;
+}
+.profileMain .Bio-posts .form form .input input::placeholder {
+  color: #5a85c5;
+}
+.profileMain .Bio-posts .form form .input input:focus {
+  color: #C3297C;
+  border-bottom: 1px solid #C3297C;
+  font-weight: 500;
+}
+.profileMain .Bio-posts .form form:nth-of-type(2) {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.profileMain .Bio-posts .form form:nth-of-type(2) input {
+  padding: 10px;
+  height: 60px;
+  width: 350px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  color: #5a85c5;
+  border-bottom: 1px solid #5a85c5;
+  background: none;
+  margin-top: -5px;
+  width: 755px;
+}
+.profileMain .Bio-posts .form form:nth-of-type(2) input::-webkit-input-placeholder {
+  color: #5a85c5;
+}
+.profileMain .Bio-posts .form form:nth-of-type(2) input::-moz-placeholder {
+  color: #5a85c5;
+}
+.profileMain .Bio-posts .form form:nth-of-type(2) input:-ms-input-placeholder {
+  color: #5a85c5;
+}
+.profileMain .Bio-posts .form form:nth-of-type(2) input::-ms-input-placeholder {
+  color: #5a85c5;
+}
+.profileMain .Bio-posts .form form:nth-of-type(2) input::placeholder {
+  color: #5a85c5;
+}
+.profileMain .Bio-posts .form form:nth-of-type(2) input:focus {
+  color: #C3297C;
+  border-bottom: 1px solid #C3297C;
+  font-weight: 500;
+}
+.profileMain .Bio-posts .form form:nth-of-type(2) button {
+  padding: 12px 30px;
+  background-color: #01ACEE;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #f0f0f0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  margin-top: 30px;
+  margin-right: 20px;
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.profileMain .Bio-posts .form form:nth-of-type(2) button:hover {
+  cursor: pointer;
+  background-color: #C3297C;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.profileMain .Bio-posts .form h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #01ACEE;
+  margin-top: 60px;
+}

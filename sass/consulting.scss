@@ -4,3 +4,28 @@
 @import "./mixin-hire";
 @import "./mixin-consult";
 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;  
+    background-color: $backgroundColor;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        overflow-x: hidden;
+    }
+}
+
+.profileMain{
+
+    @include consult;
+}

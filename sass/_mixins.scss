@@ -668,10 +668,6 @@
         .profile-card{
             @include profile-cards();
         }
-
-        a{
-            text-decoration: none;
-        }
     }
 }
 
@@ -736,16 +732,41 @@
 
             button{
 
-                &:first-of-type{
+                @include filled-button();
+                font-size: 14px;
+                padding: 10px 20px;
+
+                &:nth-of-type(2){
+                    
+                    button{
+
+                        @include border-button();
+                        font-size: 14px;
+                        padding: 10px 20px;
+                    
+                    }
+                }
+            }
+
+            >a{
+                text-decoration: none;
+
+                button{
+
                     @include filled-button();
                     font-size: 14px;
                     padding: 10px 20px;
                 }
 
                 &:nth-of-type(2){
-                    @include border-button();
-                    font-size: 14px;
-                    padding: 10px 20px;
+                    
+                    button{
+
+                        @include border-button();
+                        font-size: 14px;
+                        padding: 10px 20px;
+                    
+                    }
                 }
             }
         }
