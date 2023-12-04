@@ -69,6 +69,7 @@ body {
   border: 1px solid #C3297C;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+  cursor: pointer;
 }
 .profileMain .profilePic .profile-card .profileImg {
   width: 150px;

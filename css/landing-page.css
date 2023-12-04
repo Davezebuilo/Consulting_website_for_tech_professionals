@@ -712,6 +712,7 @@ body {
   border: 1px solid #C3297C;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+  cursor: pointer;
 }
 .pro-profiles .profiles-carousel .profile-card .profileImg {
   width: 150px;
@@ -1208,6 +1209,7 @@ body {
   border: 1px solid #C3297C;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+  cursor: pointer;
 }
 .aboutUs .teamCards .profile-card .profileImg {
   width: 150px;

@@ -15,6 +15,7 @@ const closeNav = () => {
 // Hiding Mobile Nav
 menuCloseBtn.addEventListener("click", closeNav);
 
+// for the forms in the hiri a pro page
 const form1 = document.querySelector('.form1'),
 form2 = document.querySelector('.form2'),
 form3 = document.querySelector('.form3');
