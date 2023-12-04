@@ -20,6 +20,9 @@ body {
   }
 }
 
+.profileMain {
+  margin-bottom: 100px;
+}
 .profileMain .Bio-posts .form h2 {
   color: #01ACEE;
   font-size: 30px;
