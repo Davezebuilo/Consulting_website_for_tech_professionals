@@ -653,6 +653,10 @@
         .profile-card{
             @include profile-cards();
         }
+
+        a{
+            text-decoration: none;
+        }
     }
 }
 
