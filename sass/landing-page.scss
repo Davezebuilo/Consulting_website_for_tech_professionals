@@ -78,39 +78,79 @@ body{
 
 .hero{
     @include hero-section;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include hero-section-mobl;
+    }
 }
 
 // events section
 .events{
     @include events-section;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include events-section-mobl;
+    }
 }
 
 // pro-profiles
 .pro-profiles{
     @include pro-profiles;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include pro-profiles-mobl;
+    }
 }
 
 // categories
 .categories{
     @include categories;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include categories-mobl;
+    }
 }
 
 // trust
 .Trust{
     @include trust;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include trust-mobl;
+    }
 }
 
 // about us
 .aboutUs{
     @include aboutUs;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include aboutUs-mobl;
+    }
 }
 
 // get in touch
 .getinTouch{
     @include getinTouch;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include getinTouch-mobl;
+    }
 }
 
 // footer
 .footer{
     @include footer;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include footer-mobl;
+    }
 }
