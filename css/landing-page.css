@@ -490,6 +490,47 @@ body {
   -webkit-filter: blur(184px);
           filter: blur(184px);
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 950px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 90px;
+    padding-inline: 15px;
+  }
+  .hero .leftSide {
+    width: 100%;
+    height: 50%;
+  }
+  .hero .leftSide .heroTxt h1 {
+    font-size: 35px;
+    font-weight: 700;
+    width: 350px;
+  }
+  .hero .leftSide .heroTxt ul {
+    gap: 40px;
+  }
+  .hero .leftSide .heroTxt ul li {
+    line-height: 25px;
+  }
+  .hero .leftSide .CTA {
+    width: 100%;
+    height: auto;
+  }
+  .hero .rightSide {
+    width: 100%;
+    height: 50%;
+  }
+  .hero .rightSide .heroImg {
+    width: 350px;
+    height: 350px;
+  }
+}
 
 .events {
   width: 100%;
@@ -615,6 +656,23 @@ body {
   bottom: -40%;
   -webkit-filter: blur(184px);
           filter: blur(184px);
+}
+@media screen and (max-width: 767px) {
+  .events {
+    padding-inline: 15px;
+    height: 350px;
+    margin-top: 40px;
+  }
+  .events h2 {
+    margin-bottom: 15px;
+  }
+  .events .eventCarousel {
+    width: 350px;
+    grid-gap: 20px;
+  }
+  .events .eventCarousel .eventCard {
+    width: 330px;
+  }
 }
 
 .pro-profiles {
@@ -835,6 +893,41 @@ body {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+@media screen and (max-width: 767px) {
+  .pro-profiles {
+    padding-inline: 15px;
+    height: 500px;
+    gap: 15px;
+    margin-top: 60px;
+  }
+  .pro-profiles .profiles-carousel {
+    width: 350px;
+    height: 330px;
+    margin-top: 15px;
+  }
+  .pro-profiles .profiles-carousel .profile-card {
+    width: 250px;
+    height: auto;
+  }
+  .pro-profiles .profiles-carousel .profile-card .profileImg {
+    width: 100px;
+    height: 100px;
+  }
+  .pro-profiles .profiles-carousel .profile-card .profile-cardtxt {
+    grid-gap: 25px;
+  }
+  .pro-profiles .profiles-carousel .profile-card .profile-cardtxt h4 {
+    margin-bottom: 8px;
+  }
+  .pro-profiles .profiles-carousel .profile-card .profile-cardtxt .cardButtons {
+    height: auto;
+  }
+  .pro-profiles .profiles-carousel .profile-card .profile-cardtxt .cardButtons button {
+    font-size: none;
+    padding: none;
+    margin-top: -1px;
+  }
+}
 
 .categories {
   width: 100%;
@@ -961,6 +1054,23 @@ body {
   -webkit-transition: 300ms;
   transition: 300ms;
 }
+@media screen and (max-width: 767px) {
+  .categories {
+    padding-inline: 15px;
+    height: 2500px;
+  }
+  .categories > p {
+    width: 300px;
+  }
+  .categories .cateGrid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .categories .cateGrid .gridCard {
+    width: 350px;
+  }
+}
 
 .Trust {
   width: 100%;
@@ -1022,6 +1132,32 @@ body {
   z-index: -1;
   left: 15%;
   opacity: 0.1;
+}
+@media screen and (max-width: 767px) {
+  .Trust {
+    padding-inline: 15px;
+    height: 250px;
+  }
+  .Trust .companys {
+    gap: 30px;
+  }
+  .Trust .companys .linkedin,
+  .Trust .companys .meta,
+  .Trust .companys .apple,
+  .Trust .companys .microsoft {
+    font-size: 35px;
+    color: #5a85c5;
+  }
+  .Trust .companys .linkedin p,
+  .Trust .companys .meta p,
+  .Trust .companys .apple p,
+  .Trust .companys .microsoft p {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .Trust svg {
+    left: 15px;
+  }
 }
 
 .aboutUs {
@@ -1332,6 +1468,73 @@ body {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+@media screen and (max-width: 767px) {
+  .aboutUs {
+    padding-inline: 15px;
+    height: 2950px;
+  }
+  .aboutUs .desc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+  .aboutUs .desc .descImg {
+    height: 50%;
+    width: 100%;
+  }
+  .aboutUs .desc .descImg .cripimg {
+    width: 350px;
+    height: 350px;
+  }
+  .aboutUs .desc .descTxt {
+    height: 50%;
+    width: 100%;
+  }
+  .aboutUs .desc .descTxt p {
+    width: 350px;
+  }
+  .aboutUs .MishVish {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .aboutUs .MishVish .ourMish {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    width: 350px;
+  }
+  .aboutUs .MishVish .ourMish h3 {
+    margin-bottom: 20px;
+  }
+  .aboutUs .MishVish .ourMish p {
+    width: 350px;
+  }
+  .aboutUs .MishVish .ourVish {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    width: 350px;
+    padding-left: 0px;
+    border: none;
+  }
+  .aboutUs .MishVish .ourVish h3 {
+    margin-bottom: 20px;
+  }
+  .aboutUs .MishVish .ourVish p {
+    width: 350px;
+  }
+  .aboutUs .teamCards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .getinTouch {
   width: 100%;
@@ -1485,6 +1688,33 @@ body {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+@media screen and (max-width: 767px) {
+  .getinTouch {
+    padding-inline: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 950px;
+    margin-top: 70px;
+  }
+  .getinTouch h2 {
+    top: 0;
+    left: 30%;
+  }
+  .getinTouch .touchImg {
+    height: 50%;
+    width: 100%;
+  }
+  .getinTouch .touchImg .Tchimg {
+    width: 350px;
+    height: 350px;
+  }
+  .getinTouch form {
+    width: 100%;
+    height: 50%;
+  }
+}
 
 .footer {
   width: 100%;
@@ -1623,4 +1853,20 @@ body {
   background-color: #C3297C;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+@media screen and (max-width: 767px) {
+  .footer .foot {
+    width: 350px;
+  }
+  .footer .foot .btmlogo {
+    width: 100px;
+    height: 100px;
+  }
+  .footer .links {
+    width: 320px;
+  }
+  .footer .links i {
+    font-size: 25px;
+    font-weight: 500;
+  }
 }
