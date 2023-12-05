@@ -14,11 +14,6 @@ body {
   scroll-behavior: smooth;
   background-color: #092145;
 }
-@media screen and (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-  }
-}
 
 .profileMain {
   width: 100%;
@@ -268,4 +263,35 @@ body {
 }
 .profileMain .Bio-posts .featPost .postsgrid .postCard:hover::before {
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .profileMain {
+    width: 100%;
+    padding-inline: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+  }
+  .profileMain .profilePic {
+    position: static;
+    width: 100%;
+    height: 30%;
+    width: 100%;
+  }
+  .profileMain .profilePic .profile-card {
+    position: static;
+  }
+  .profileMain .Bio-posts {
+    width: 100%;
+    height: 70%;
+    border: none;
+    padding-inline: 5px;
+  }
+  .profileMain .Bio-posts .featPost .postsgrid {
+    width: 350px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }

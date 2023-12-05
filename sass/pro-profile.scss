@@ -19,9 +19,9 @@ body{
     background-color: $backgroundColor;
 
     // mobile media query
-    @include mediaQuery(767px){
-        overflow-x: hidden;
-    }
+    // @include mediaQuery(767px){
+    //     overflow-x: hidden;
+    // }
 }
 
 .profileMain{
@@ -134,5 +134,10 @@ body{
                 }
             }
         }
+    }
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include profile-mobl;
     }
 }

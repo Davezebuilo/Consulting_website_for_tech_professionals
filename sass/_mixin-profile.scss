@@ -1,3 +1,37 @@
 @import "./variables";
 @import"./mediaQuery";
-@import "./mixins"
+@import "./mixins";
+
+@mixin profile-mobl{
+    width: 100%;
+    padding-inline: $margin-mobl;
+    flex-direction: column;
+    margin-top: 60px;
+
+
+    .profilePic{
+        position: static;
+        width: 100%;
+        height: 30%;
+        width: 100%;
+
+        .profile-card{
+            position: static;
+        }
+    }
+
+    .Bio-posts{
+        width: 100%;
+        height: 70%;
+        border: none;
+        padding-inline: 5px;
+
+        .featPost{
+
+            .postsgrid{
+                width: 350px;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
