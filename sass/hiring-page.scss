@@ -19,9 +19,9 @@ body{
     background-color: $backgroundColor;
 
     // mobile media query
-    @include mediaQuery(767px){
-        overflow-x: hidden;
-    }
+    // @include mediaQuery(767px){
+    //     overflow-x: hidden;
+    // }
 }
 
 .hero{
@@ -32,14 +32,34 @@ body{
     justify-content: center;
     align-items: center;
 
+    // mobile media query
+    @include mediaQuery(767px){
+        padding-inline: $margin-mobl;
+        display: flex;
+        flex-direction: column;
+        height: 1150px;
+        margin-top: 90px;
+        width: 100%;
+    }
+
     .form1{
         @include hero-hire;
         display: block;
+
+        // mobile media query
+        @include mediaQuery(767px){
+            @include hero-hire-mobl;
+        }
     }
 
     .form2{
         @include hero-hire;
         display: none;
+
+        // mobile media query
+        @include mediaQuery(767px){
+            @include hero-hire-mobl;
+        }
     }
 
     .form3{
@@ -48,6 +68,12 @@ body{
         @include hero-hire;
         margin-left: 30px;
         display: none;
+
+        // mobile media query
+        @include mediaQuery(767px){
+            @include hero-hire-mobl;
+            margin-left: 10px;
+        }
 
         form{
             margin-left: 130px;
@@ -59,6 +85,11 @@ body{
                 width: 350px;
                 margin-top: 2px;
             }
+
+            // mobile media query
+            @include mediaQuery(767px){
+                margin-left: 0px;
+            }
         }
     }
 
@@ -68,5 +99,10 @@ body{
         bottom: 20%;
         right: 23%;
         padding-inline: 90px;
+
+        // mobile media query
+        @include mediaQuery(767px){
+            bottom: 0;
+        }
     }
 }

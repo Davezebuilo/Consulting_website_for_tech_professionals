@@ -279,3 +279,13 @@
         }
     }
 }
+
+// Media query for the hiring page
+@mixin hero-hire-mobl{
+    width: 100%;
+    height: 50%;
+
+    form{
+        margin-left: 0px;
+    }
+}
