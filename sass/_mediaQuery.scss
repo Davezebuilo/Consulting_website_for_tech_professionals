@@ -60,23 +60,30 @@
 
 @mixin pro-profiles-mobl{
     padding-inline: $margin-mobl;
-    height: 500px;
+    height: 600px;
     gap: 15px;
     margin-top: 60px;
 
+    >p{
+        margin-bottom: 40px;
+    }
+
     .profiles-carousel{
-        width: 350px;
-        height: 330px;
-        margin-top: 15px;
+        // height: 330px;
+        margin-top: 65px;
 
         .profile-card{
             @include profile-cards-mobl();
         }
     }
+
+    >button{
+        margin-top: 90px;
+    }
 }
 
 @mixin profile-cards-mobl{
-    width: 250px;
+    width: auto;
     height: auto;
 
     .profileImg{
@@ -113,11 +120,10 @@
     }
 
     .eventCarousel{
-        width: 350px;
-        grid-gap: 20px;
+        // grid-gap: 20px;
 
         .eventCard{
-            width: 330px;
+            width: auto;
         }
     }
 }

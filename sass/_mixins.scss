@@ -502,22 +502,22 @@
     }
 
     .eventCarousel{
-        padding-inline: 10px;
-        width: 100%;
-        height: 300px;
+        // padding-inline: 10px;
+        // width: 100%;
+        // height: 300px;
         // background-color: aqua;
-        display: grid;
-        place-items: center;
-        grid-gap: 30px;
-        grid-template-columns: repeat(6, 1fr);
-        overflow: scroll;
+        // display: grid;
+        // place-items: center;
+        // grid-gap: 30px;
+        // grid-template-columns: repeat(6, 1fr);
+        // overflow: hidden;
 
-        &::-webkit-scrollbar{
-            display: none;
-        }
+        // &::-webkit-scrollbar{
+        //     display: none;
+        // }
 
         .eventCard{
-            width: 400px;
+            width: auto;
             height: 250px;
             position: relative;
             overflow: hidden;
@@ -650,20 +650,20 @@
     
     // carousel for the profiles on the landing
     .profiles-carousel{
-        display: grid;
-        place-items: center;
-        grid-gap: 30px;
-        grid-template-columns: repeat(6, 1fr);
-        width: 100%;
-        height: 430px;
-        overflow: scroll;
+        // display: grid;
+        // place-items: center;
+        // grid-gap: 30px;
+        // grid-template-columns: repeat(6, 1fr);
+        // width: 100%;
+        // height: 430px;
+        overflow: hidden;
         margin-top: 30px;
         // background-color: brown;
-        padding-inline: 10px;
+        // padding-inline: 10px;
 
-        &::-webkit-scrollbar{
-            display: none;
-        }
+        // &::-webkit-scrollbar{
+        //     display: none;
+        // }
 
         .profile-card{
             @include profile-cards();
@@ -673,7 +673,7 @@
 
 // profile card
 @mixin profile-cards{
-    width: 350px;
+    width: auto;
     height: 400px;
     border: 1px solid $backgroundColor-alt;
     display: flex;
@@ -683,7 +683,7 @@
     border-radius: 20px;
     gap: 30px;
     transition: 300ms ease;
-    padding-block: 15px;
+    padding: 15px 100px;
 
     &:hover{
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.197);
