@@ -1067,9 +1067,6 @@ body {
     grid-template-columns: 1fr;
     place-items: center;
   }
-  .categories .cateGrid .gridCard {
-    width: 350px;
-  }
 }
 
 .Trust {
