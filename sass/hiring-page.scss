@@ -19,9 +19,13 @@ body{
     background-color: $backgroundColor;
 
     // mobile media query
-    // @include mediaQuery(767px){
-    //     overflow-x: hidden;
-    // }
+    @include mediaQuery(767px){
+        overflow-x: hidden;
+    }
+
+    @include mediaQuery(1024px, 768px){
+        overflow-x: hidden;
+    }
 }
 
 .hero{
