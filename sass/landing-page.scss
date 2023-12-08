@@ -63,6 +63,12 @@ body{
         display: block;
         @include mobile-navbar;
     }
+
+    @include mediaQuery(1024px, 768px){
+        display: block;
+        @include mobile-navbar;
+        justify-content: space-between;
+    }
 }
 
 // mobile-navbar
@@ -70,6 +76,11 @@ body{
     display: none;
 
     @include mediaQuery(767px){
+        display: block;
+        @include for-pop-out;
+    }
+
+    @include mediaQuery(1024px, 768px){
         display: block;
         @include for-pop-out;
     }
@@ -82,6 +93,11 @@ body{
     // mobile media query
     @include mediaQuery(767px){
         @include hero-section-mobl;
+    }
+
+    // tablet media query
+    @include mediaQuery(1024px, 768px){
+        @include hero-section-tab;
     }
 }
 
@@ -113,6 +129,10 @@ body{
     @include mediaQuery(767px){
         @include categories-mobl;
     }
+
+    @include mediaQuery(1024px, 768px){
+        @include categories-tab;
+    }
 }
 
 // trust
@@ -122,6 +142,11 @@ body{
     // mobile media query
     @include mediaQuery(767px){
         @include trust-mobl;
+    }
+
+    
+    @include mediaQuery(1024px, 768px){
+        @include trust-tab;
     }
 }
 
@@ -133,6 +158,11 @@ body{
     @include mediaQuery(767px){
         @include aboutUs-mobl;
     }
+
+    
+    @include mediaQuery(1024px, 768px){
+        @include aboutUs-tab;
+    }
 }
 
 // get in touch
@@ -143,6 +173,11 @@ body{
     @include mediaQuery(767px){
         @include getinTouch-mobl;
     }
+
+    
+    @include mediaQuery(1024px, 768px){
+        @include getinTouch-tab;
+    }
 }
 
 // footer
@@ -152,5 +187,10 @@ body{
     // mobile media query
     @include mediaQuery(767px){
         @include footer-mobl;
+    }
+
+    
+    @include mediaQuery(1024px, 768px){
+        @include footer-tab;
     }
 }

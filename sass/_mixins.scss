@@ -108,6 +108,7 @@
     padding-inline: 15px;
     height: 65px;
     z-index: 55;
+    justify-content: space-between;
 
     .logo{
         display: block;
@@ -139,6 +140,10 @@
         button{
         display: none;
         }
+    }
+
+    .button-wrap{
+        display: none;
     }
 }
 

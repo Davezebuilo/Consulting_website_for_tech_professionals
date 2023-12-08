@@ -12,6 +12,7 @@
     }
 }
 
+// hero section mobile and tablet
 @mixin hero-section-mobl{
     flex-direction: column-reverse;
     height: 950px;
@@ -50,6 +51,59 @@
     .rightSide{
         width: 100%;
         height: 50%;
+
+        .heroImg{
+            width: 350px;
+            height: 350px;
+        }
+    }
+}
+
+@mixin hero-section-tab{
+    padding-inline: $margin-mobl;
+    flex-direction: column-reverse;
+    height: 900px;
+
+    .leftSide{
+        width: 100%;
+        align-items: center;
+        
+        .heroTxt{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                font-size: 35px;
+                font-weight: 700;
+                width: 850px;
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+
+            ul{
+                width: 500px;
+                gap: 40px;
+
+                li{
+
+                    line-height: 25px;
+                }
+            }
+        }
+
+        .CTA{
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .rightSide{
+        width: 100%;
 
         .heroImg{
             width: 350px;
@@ -128,6 +182,7 @@
     }
 }
 
+// categories mobile and tablet
 @mixin categories-mobl{
     padding-inline: $margin-mobl;
     height: 2500px;
@@ -142,6 +197,16 @@
     }
 }
 
+@mixin categories-tab{
+    padding-inline: $margin-mobl;
+    height: 1300px;
+
+    .cateGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// trust for mobile and tablet
 @mixin trust-mobl{
     padding-inline: $margin-mobl;
     height: 250px;
@@ -168,6 +233,33 @@
     }
 }
 
+@mixin trust-tab{
+    padding-inline: $margin-mobl;
+    height: 250px;
+    
+    .companys{
+        gap: 60px;
+
+        .linkedin,
+        .meta,
+        .apple,
+        .microsoft{
+            font-size: 35px;
+            color: $backgroundColor-v;
+
+            p{
+                font-size: 16px;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    svg{
+        left: 15px;
+    }
+}
+
+// about us media query for mobileand tablet
 @mixin aboutUs-mobl{
     padding-inline: $margin-mobl;
     height: 2950px;
@@ -234,6 +326,35 @@
     }
 }
 
+@mixin aboutUs-tab{
+    padding-inline: $margin-mobl;
+    height: 1730px;
+
+    .desc{
+        gap: 50px;
+
+        .descImg{
+            height: 50%;
+            width: 100%;
+
+            .cripimg{
+                width: 350px;
+                height: 350px;
+            }
+        }
+
+        .descTxt{
+            height: 50%;
+            width: 100%;
+
+            p{
+                width: 350px;
+            }
+        }
+    }
+}
+
+// get intouch media query for mobile and tablet
 @mixin getinTouch-mobl{
     padding-inline: $margin-mobl;
     flex-direction: column;
@@ -261,10 +382,60 @@
     }
 }
 
+@mixin getinTouch-tab{
+    padding-inline: $margin-mobl;
+    height: 450px;
+    margin-top: 70px;
+    
+
+    h2{
+        top: 0;
+        left: 38%;
+        margin-bottom: 2px;
+    }
+
+    .touchImg{
+
+        .Tchimg{
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    form{
+        width: 100%;
+        height: auto;
+    }
+}
+
+// media query for footer mobile and tablet
 @mixin footer-mobl{
 
     .foot{
         width: 350px;
+
+        .btmlogo{
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .links{
+        width: 320px;
+
+        i{
+            font-size: 25px;
+            font-weight: 500;
+        }
+    }
+}
+
+@mixin footer-tab{
+    padding-inline: $margin-mobl;
+    margin-top: 50px;
+
+    .foot{
+        width: 750px;
 
         .btmlogo{
             width: 100px;
