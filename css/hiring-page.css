@@ -41,6 +41,22 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .hero {
+    padding-inline: 15px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    height: 600px;
+    margin-top: 90px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .hero > h2 {
+    margin-left: 135px;
+  }
+}
 .hero .form1 {
   width: 50%;
   height: auto;
@@ -134,6 +150,14 @@ body {
     margin-left: 0px;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .hero .form1 {
+    width: auto;
+  }
+  .hero .form1 form {
+    margin-left: 0px;
+  }
+}
 .hero .form2 {
   width: 50%;
   height: auto;
@@ -222,6 +246,14 @@ body {
   .hero .form2 {
     width: 100%;
     height: 50%;
+  }
+  .hero .form2 form {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .hero .form2 {
+    width: auto;
   }
   .hero .form2 form {
     margin-left: 0px;
@@ -323,6 +355,14 @@ body {
     margin-left: 0px;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .hero .form3 {
+    width: auto;
+  }
+  .hero .form3 form {
+    margin-left: 0px;
+  }
+}
 .hero .form3 form {
   margin-left: 130px;
   padding-inline: 0px;
@@ -391,5 +431,10 @@ body {
 @media screen and (max-width: 767px) {
   .hero button {
     bottom: 0;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .hero button {
+    right: 10%;
   }
 }

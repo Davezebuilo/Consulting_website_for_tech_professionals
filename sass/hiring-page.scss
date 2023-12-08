@@ -42,6 +42,21 @@ body{
         width: 100%;
     }
 
+    
+    @include mediaQuery(1024px, 768px){
+        padding-inline: $margin-mobl;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 600px;
+        margin-top: 90px;
+        width: 100%;
+        margin-bottom: 30px;
+
+        >h2{
+            margin-left: 135px;
+        }
+    }
+
     .form1{
         @include hero-hire;
         display: block;
@@ -49,6 +64,10 @@ body{
         // mobile media query
         @include mediaQuery(767px){
             @include hero-hire-mobl;
+        }
+
+        @include mediaQuery(1024px, 768px){
+            @include hero-hire-tab;
         }
     }
 
@@ -59,6 +78,10 @@ body{
         // mobile media query
         @include mediaQuery(767px){
             @include hero-hire-mobl;
+        }
+
+        @include mediaQuery(1024px, 768px){
+            @include hero-hire-tab;
         }
     }
 
@@ -73,6 +96,10 @@ body{
         @include mediaQuery(767px){
             @include hero-hire-mobl;
             margin-left: 10px;
+        }
+
+        @include mediaQuery(1024px, 768px){
+            @include hero-hire-tab;
         }
 
         form{
@@ -103,6 +130,10 @@ body{
         // mobile media query
         @include mediaQuery(767px){
             bottom: 0;
+        }
+
+        @include mediaQuery(1024px, 768px){
+            right: 10%;
         }
     }
 }
