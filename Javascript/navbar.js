@@ -25,6 +25,7 @@ button.addEventListener('click', function(){
     if (form1.style.display === 'none'){
         form2.style.display = 'none';
         form3.style.display = 'block';
+        button.innerHTML = "Submit";
     }else{
         form1.style.display = 'none';
         form2.style.display = 'block';
