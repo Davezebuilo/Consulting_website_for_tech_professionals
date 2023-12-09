@@ -295,3 +295,23 @@ body {
     grid-template-columns: 1fr;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .profileMain {
+    padding-inline: 15px;
+    margin-top: 90px;
+  }
+  .profileMain .profilePic .profile-card {
+    top: 7%;
+  }
+  .profileMain .Bio-posts {
+    padding: 30px 20px;
+  }
+  .profileMain .Bio-posts .featPost .postsgrid {
+    width: 510px;
+    gap: 10px;
+  }
+  .profileMain .Bio-posts .featPost .postsgrid .postCard {
+    width: 250px;
+    height: 200px;
+  }
+}

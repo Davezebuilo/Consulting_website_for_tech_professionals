@@ -11,7 +11,7 @@ $(document).ready(function(){
                 items: 1.5
             },
             768: {
-                items: 1,
+                items: 1.5,
                 margin: 20
             },
             1280: {

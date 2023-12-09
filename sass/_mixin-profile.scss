@@ -35,3 +35,31 @@
         }
     }
 }
+
+@mixin profile-tab{
+    padding-inline: $margin-mobl;
+    margin-top: 90px;
+
+    .profilePic{
+
+        .profile-card{
+            top: 7%;
+        }
+    }
+
+    .Bio-posts{
+        padding: 30px 20px;
+
+        .featPost{
+
+            .postsgrid{
+                width: 510px;
+                gap: 10px;
+                .postCard{
+                    width: 250px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

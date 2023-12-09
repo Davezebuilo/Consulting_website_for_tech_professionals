@@ -140,4 +140,8 @@ body{
     @include mediaQuery(767px){
         @include profile-mobl;
     }
+
+    @include mediaQuery(1024px, 768px){
+        @include profile-tab;
+    }
 }
