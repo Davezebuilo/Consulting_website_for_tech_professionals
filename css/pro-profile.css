@@ -253,7 +253,7 @@ body {
   display: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(25, 25, 25, 0.6352941176);
+  background-color: rgba(25, 25, 25, 0.2470588235);
 }
 .profileMain .Bio-posts .featPost .postsgrid .postCard:hover {
   -webkit-transform: scale(0.97);
