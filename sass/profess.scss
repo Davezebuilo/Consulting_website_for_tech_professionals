@@ -1,0 +1,16 @@
+@import "./mediaQuery";
+@import "./mixins";
+@import "./variables";
+@import  "./mixin-profess";
+
+.pro-profile{
+    @include pro-profile;
+}
+
+.search{
+    @include search;
+}
+
+.data-eng{
+    @include data-eng
+}

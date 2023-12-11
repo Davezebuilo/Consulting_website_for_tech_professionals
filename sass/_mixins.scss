@@ -1,5 +1,6 @@
 @import "./variables";
 @import"./mediaQuery";
+@import "./mixin-profess";
 
 // Navbar design
 
@@ -688,7 +689,7 @@
     border-radius: 20px;
     gap: 30px;
     transition: 300ms ease;
-    padding: 15px 100px;
+    padding: 15px 90px;
 
     &:hover{
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.197);
@@ -1115,7 +1116,7 @@
         gap: 40px;
 
         .profile-card{
-        @include profile-cards();
+        @include grid-cards();
         }
     }
 }

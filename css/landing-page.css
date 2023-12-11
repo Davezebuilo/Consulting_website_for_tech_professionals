@@ -33,7 +33,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-inline: 120px;
+  padding-inline: 90px;
   position: fixed;
   top: 0;
   z-index: 50;
@@ -518,7 +518,7 @@ body {
 .hero {
   width: 100%;
   height: 600px;
-  padding-inline: 120px;
+  padding-inline: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,7 +773,7 @@ body {
 .events {
   width: 100%;
   height: 400px;
-  padding-inline: 120px;
+  padding-inline: 90px;
   position: relative;
 }
 .events h2 {
@@ -899,7 +899,7 @@ body {
   height: 650px;
   margin-top: 90px;
   position: relative;
-  padding-inline: 120px;
+  padding-inline: 90px;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -969,7 +969,7 @@ body {
   gap: 30px;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
-  padding: 15px 100px;
+  padding: 15px 90px;
 }
 .pro-profiles .profiles-carousel .profile-card:hover {
   -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.197);
@@ -1143,7 +1143,7 @@ body {
 .categories {
   width: 100%;
   height: 1000px;
-  padding-inline: 120px;
+  padding-inline: 90px;
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1294,7 +1294,7 @@ body {
   width: 100%;
   height: 300px;
   background-color: rgba(14, 42, 84, 0.2588235294);
-  padding-inline: 120px;
+  padding-inline: 90px;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -1407,7 +1407,7 @@ body {
 .aboutUs {
   width: 100%;
   height: 1600px;
-  padding-inline: 120px;
+  padding-inline: 90px;
   margin-top: 70px;
 }
 .aboutUs h2 {
@@ -1562,7 +1562,7 @@ body {
   gap: 40px;
 }
 .aboutUs .teamCards .profile-card {
-  width: auto;
+  width: 350px;
   height: 400px;
   border: 1px solid #0e2a54;
   display: -webkit-box;
@@ -1582,7 +1582,7 @@ body {
   gap: 30px;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
-  padding: 15px 100px;
+  padding: 15px 90px;
 }
 .aboutUs .teamCards .profile-card:hover {
   -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.197);
@@ -1608,12 +1608,14 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  grid-gap: 30px;
+  width: 250px;
+  height: auto;
+  gap: 15px;
 }
 .aboutUs .teamCards .profile-card .profile-cardtxt h4 {
-  font-weight: 200;
-  font-size: 20px;
   color: #01ACEE;
+  font-size: 20px;
+  font-weight: 200;
 }
 .aboutUs .teamCards .profile-card .profile-cardtxt h4 span {
   color: #C3297C;
@@ -1630,88 +1632,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 5px;
 }
-.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons button {
-  padding: 12px 30px;
-  background-color: #01ACEE;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  color: #f0f0f0;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  font-size: 14px;
-  padding: 10px 20px;
+.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons i {
+  font-size: 20px;
+  color: rgb(255, 208, 0);
 }
-.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons button:hover {
-  cursor: pointer;
-  background-color: #C3297C;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons button:nth-of-type(2) button {
-  padding: 12px 30px;
-  font-size: 16px;
-  background: none;
-  outline: none;
-  border: 1px solid #01ACEE;
-  border-radius: 5px;
-  color: #01ACEE;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  font-size: 14px;
-  padding: 10px 20px;
-}
-.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons button:nth-of-type(2) button:hover {
-  cursor: pointer;
-  background-color: #0AE8F5;
-  background-color: rgba(1, 171, 239, 0.3);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons > a {
-  text-decoration: none;
-}
-.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons > a button {
-  padding: 12px 30px;
-  background-color: #01ACEE;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  color: #f0f0f0;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  font-size: 14px;
-  padding: 10px 20px;
-}
-.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons > a button:hover {
-  cursor: pointer;
-  background-color: #C3297C;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons > a:nth-of-type(2) button {
-  padding: 12px 30px;
-  font-size: 16px;
-  background: none;
-  outline: none;
-  border: 1px solid #01ACEE;
-  border-radius: 5px;
-  color: #01ACEE;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  font-size: 14px;
-  padding: 10px 20px;
-}
-.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons > a:nth-of-type(2) button:hover {
-  cursor: pointer;
-  background-color: #0AE8F5;
-  background-color: rgba(1, 171, 239, 0.3);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons p {
+  font-size: 18px;
 }
 @media screen and (max-width: 767px) {
   .aboutUs {
@@ -1814,7 +1742,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-inline: 120px;
+  padding-inline: 90px;
   padding-top: 80px;
   position: relative;
   gap: 40px;
@@ -2010,7 +1938,7 @@ body {
   height: 550px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#092145), to(rgba(195, 41, 123, 0.2352941176)));
   background-image: linear-gradient(to bottom, #092145, rgba(195, 41, 123, 0.2352941176));
-  padding-inline: 120px;
+  padding-inline: 90px;
   padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;

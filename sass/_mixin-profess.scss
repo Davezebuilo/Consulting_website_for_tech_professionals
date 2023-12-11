@@ -1,0 +1,332 @@
+@import "./mediaQuery";
+// @import "./mixins";
+@import "./variables";
+
+@mixin pro-profile{
+    width: 100%;
+    height: 650px;
+    margin-top: 40px;
+    padding-inline: $Margin;
+    // margin-bottom: 20px;
+
+    
+    button{
+        @include border-button();
+        margin-top: 40px;
+    }
+
+    >p{
+        color: $PrimaryColor;
+        width: auto;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 35px;
+        text-transform: capitalize;
+
+        span{
+            color: $SecondaryColor;
+        }
+    }
+    
+    // carousel for the profiles on the landing
+    .profiles-carousel{
+        // display: grid;
+        // place-items: center;
+        // grid-gap: 20px;
+        // grid-template-columns: repeat(6, 1fr);
+        // width: 100%;
+        // height: 430px;
+        overflow: hidden;
+        // margin-top: 20px;
+        // background-color: brown;
+        // padding-inline: 10px;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .profile-card{
+            @include profile-card();
+        }
+    }
+}
+
+// profile card
+@mixin profile-card{
+    width: auto;
+    height: 400px;
+    border: 1px solid $backgroundColor-alt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 30px;
+    transition: 300ms ease;
+    padding: 15px 100px;
+
+    &:hover{
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.197);
+        border: 1px solid $SecondaryColor;
+        transform: scale(0.95);
+        cursor: pointer;
+    }
+
+    .profileImg{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .profile-cardtxt{
+        display: grid;
+        place-items: center;
+        grid-gap: 30px;
+
+        h4{
+            font-weight: 200;
+            font-size: 20px;
+            color: $PrimaryColor;
+            text-align: center;
+
+            span{
+                color: $SecondaryColor;
+                font-weight: 500;
+            }
+        }
+
+        >p{
+            font-size: 14px;
+            width: 300px;
+            color: $backgroundColor-v;
+            text-align: center;
+            margin-top: -35px;
+        }
+
+        .cardButtons{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            button{
+
+                @include filled-button();
+                font-size: 14px;
+                padding: 10px 20px;
+
+                &:nth-of-type(2){
+                    
+                    button{
+
+                        @include border-button();
+                        font-size: 14px;
+                        padding: 10px 20px;
+                    
+                    }
+                }
+            }
+
+            >a{
+                text-decoration: none;
+
+                button{
+
+                    @include filled-button();
+                    font-size: 14px;
+                    padding: 10px 20px;
+                }
+
+                &:nth-of-type(2){
+                    
+                    button{
+
+                        @include border-button();
+                        font-size: 14px;
+                        padding: 10px 20px;
+                    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin search{
+    width: 100%;
+    height: 60px;
+    margin-top: 110px;
+    // background-color: aqua;
+    padding-inline: $Margin;
+    display: grid;
+    place-items: center;
+
+    .searchbar{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        input{
+            width: 100%;
+            height: 45px;
+            border-radius: 10px;
+            outline: none;
+            background-color: $backgroundColor;
+            border: 1px solid $backgroundColor-alt;
+            padding-inline: 15px;
+            font-size: 16px;
+            color: $backgroundColor-v;
+
+            &:focus{
+                color: $SecondaryColor;
+                border: 1px solid $SecondaryColor;
+            }
+        }
+
+        i{
+            font-size: 25px;
+            font-weight: 700;
+            color: $SecondaryColor;
+            padding: 7px 14px;
+            background-color: $backgroundColor-alt;
+            border-radius: 10px;
+
+            &:hover{
+                background-color: $backgroundColor-v;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@mixin data-eng{
+    width: 100%;
+    height: 950px;
+    padding-inline: $Margin;
+    margin-bottom: 70px;
+
+    >p{
+        color: $PrimaryColor;
+        width: auto;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 35px;
+        text-transform: capitalize;
+
+        span{
+            color: $SecondaryColor;
+        }
+    }
+
+
+    .allcap{
+        width: auto;
+        height: auto;
+        display: grid;
+        place-items: center;
+
+        .profiles-carousels{
+            display: grid;
+            place-items: center;
+            grid-gap: 15px;
+            grid-template-columns: repeat(3, 1fr);
+            width: 1100px;
+            height: auto;
+            margin-top: 20px;
+    
+            &::-webkit-scrollbar{
+                display: none;
+            }
+    
+            .profile-card{
+                @include grid-cards();
+            }
+        }
+    }
+}
+
+@mixin grid-cards{
+    width: 350px;
+    height: 400px;
+    border: 1px solid $backgroundColor-alt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 30px;
+    transition: 300ms ease;
+    padding: 15px 90px;
+
+    &:hover{
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.197);
+        border: 1px solid $SecondaryColor;
+        transform: scale(0.95);
+        cursor: pointer;
+    }
+
+    .profileImg{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .profile-cardtxt{
+        display: grid;
+        place-items: center;
+        width: 250px;
+        height: auto;
+        gap: 15px;
+
+        h4{
+            color: $PrimaryColor;
+            font-size: 20px;
+            font-weight: 200;
+
+            span{
+                color: $SecondaryColor;
+                font-weight: 500;
+            }
+        }
+
+        p{
+            font-size: 14px;
+            color: $backgroundColor-v;
+        }
+
+        .cardButtons{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            i{
+                font-size: 20px;
+                color: rgb(255, 208, 0);
+            }
+
+            p{
+                font-size: 18px;
+
+            }
+        }
+    }
+}
