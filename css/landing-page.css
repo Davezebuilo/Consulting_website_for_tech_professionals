@@ -1641,6 +1641,23 @@ body {
 .aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons p {
   font-size: 18px;
 }
+.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons button {
+  padding: 12px 30px;
+  background-color: #01ACEE;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #f0f0f0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.aboutUs .teamCards .profile-card .profile-cardtxt .cardButtons button:hover {
+  cursor: pointer;
+  background-color: #C3297C;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
 @media screen and (max-width: 767px) {
   .aboutUs {
     padding-inline: 15px;

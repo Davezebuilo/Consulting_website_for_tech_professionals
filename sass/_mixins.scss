@@ -1117,6 +1117,15 @@
 
         .profile-card{
         @include grid-cards();
+
+        .profile-cardtxt{
+
+            .cardButtons{
+                button{
+                    @include filled-button();
+                }
+            }
+        }
         }
     }
 }

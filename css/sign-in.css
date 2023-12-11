@@ -1,0 +1,222 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #092145;
+}
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.sign-in .signInimg {
+  width: 50%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.sign-in .signInimg .opts h4 {
+  color: #01ACEE;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sign-in .signInimg .opts p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #01ACEE;
+}
+.sign-in .signInimg .opts p span {
+  color: #C3297C;
+}
+.sign-in .signInimg .opts p span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sign-in .signInimg .opts .imgs {
+  width: 400px;
+  height: 400px;
+}
+.sign-in .signInimg .opts .imgs img {
+  width: 100%;
+  height: 100%;
+}
+.sign-in .signInimg .opts .opt {
+  width: 400px;
+  height: 45px;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.sign-in .signInimg .opts .opt:nth-of-type(3) {
+  margin-top: 20px;
+}
+.sign-in .signInimg .opts .opt i {
+  font-size: 25px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.sign-in .signInimg .opts .opt span {
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.sign-in .signInimg .opts .opt:hover {
+  background-color: #C3297C;
+  cursor: pointer;
+}
+.sign-in .signInimg .opts .opt:hover i {
+  color: #f0f0f0;
+}
+.sign-in .signInimg .opts .opt:hover span {
+  color: #f0f0f0;
+}
+.sign-in .loginarea {
+  width: 50%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#092145), to(rgba(195, 41, 123, 0.2862745098)));
+  background-image: linear-gradient(top, #092145, rgba(195, 41, 123, 0.2862745098));
+}
+.sign-in .loginarea .log .signintxt {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.sign-in .loginarea .log .signintxt h2 {
+  color: #01ACEE;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.sign-in .loginarea .log .signintxt p {
+  font-size: 18px;
+  font-weight: 500px;
+  color: #C3297C;
+}
+.sign-in .loginarea .log .user {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.sign-in .loginarea .log .user input {
+  padding: 10px;
+  height: 60px;
+  width: 350px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  color: #5a85c5;
+  border-bottom: 1px solid #5a85c5;
+  background: none;
+  margin-top: 10px;
+}
+.sign-in .loginarea .log .user input::-webkit-input-placeholder {
+  color: #5a85c5;
+}
+.sign-in .loginarea .log .user input::-moz-placeholder {
+  color: #5a85c5;
+}
+.sign-in .loginarea .log .user input:-ms-input-placeholder {
+  color: #5a85c5;
+}
+.sign-in .loginarea .log .user input::-ms-input-placeholder {
+  color: #5a85c5;
+}
+.sign-in .loginarea .log .user input::placeholder {
+  color: #5a85c5;
+}
+.sign-in .loginarea .log .user input:focus {
+  color: #C3297C;
+  border-bottom: 1px solid #C3297C;
+  font-weight: 500;
+}
+.sign-in .loginarea .log .user .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  width: 350px;
+  margin-top: 20px;
+}
+.sign-in .loginarea .log .user .check input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 7px;
+  border: 1.5px solid #01ACEE;
+}
+.sign-in .loginarea .log .user .check input[type=checkbox]:checked {
+  background-color: #C3297C;
+}
+.sign-in .loginarea .log .user .check span {
+  font-size: 16px;
+  color: #5a85c5;
+}
+.sign-in .loginarea .log .user a button {
+  padding: 12px 30px;
+  background-color: #01ACEE;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #f0f0f0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding-inline: 150px;
+  margin-top: 30px;
+}
+.sign-in .loginarea .log .user a button:hover {
+  cursor: pointer;
+  background-color: #C3297C;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}

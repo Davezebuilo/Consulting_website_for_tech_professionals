@@ -1,0 +1,33 @@
+@import "./mediaQuery";
+@import "./mixins";
+@import "./variables";
+@import "./mixin-sign-in";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;  
+    background-color: $backgroundColor;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        overflow-x: hidden;
+    }
+
+    // @include mediaQuery(1024px, 768px){
+    //     overflow-x: hidden;
+    // }
+}
+
+.sign-in{
+    @include signin;
+}
