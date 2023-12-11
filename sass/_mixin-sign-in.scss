@@ -33,8 +33,9 @@
                 font-size: 16px;
                 color: $PrimaryColor;
 
-                span{
+                a{
                     color: $SecondaryColor;
+                    text-decoration: none;
 
                     &:hover{
                         text-decoration: underline;
@@ -44,8 +45,8 @@
             }
 
             .imgs{
-                width: 400px;
-                height:400px;
+                width: 350px;
+                height:350px;
     
                 img{
                     width: 100%;
@@ -158,7 +159,7 @@
                     display: flex;
                     align-items: center;
                     gap: 5px;
-                    width: 350px;
+                    width: 450px;
                     margin-top: 20px;
     
                     input[type="checkbox"]{
@@ -183,7 +184,7 @@
     
                     button{
                         @include filled-button();
-                        padding-inline: 150px;
+                        padding-inline: 200px;
                         margin-top: 30px;
                     }
                 }

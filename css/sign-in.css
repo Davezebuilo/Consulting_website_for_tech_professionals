@@ -56,16 +56,17 @@ body {
   font-size: 16px;
   color: #01ACEE;
 }
-.sign-in .signInimg .opts p span {
+.sign-in .signInimg .opts p a {
   color: #C3297C;
+  text-decoration: none;
 }
-.sign-in .signInimg .opts p span:hover {
+.sign-in .signInimg .opts p a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 .sign-in .signInimg .opts .imgs {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
 .sign-in .signInimg .opts .imgs img {
   width: 100%;
@@ -205,7 +206,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 5px;
-  width: 350px;
+  width: 450px;
   margin-top: 20px;
 }
 .sign-in .loginarea .log .user .check input[type=checkbox] {
@@ -234,7 +235,7 @@ body {
   color: #f0f0f0;
   -webkit-transition: 300ms;
   transition: 300ms;
-  padding-inline: 150px;
+  padding-inline: 200px;
   margin-top: 30px;
 }
 .sign-in .loginarea .log .user a button:hover {
