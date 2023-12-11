@@ -37,7 +37,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 50;
-  border-bottom: 0.5px solid rgba(182, 182, 182, 0.349);
+  border-bottom: 0.5px solid rgba(182, 182, 182, 0.085);
 }
 .laptop-navbar a {
   text-decoration: none;
