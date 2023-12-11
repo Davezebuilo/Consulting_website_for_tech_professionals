@@ -225,6 +225,11 @@ body {
   font-size: 16px;
   color: #5a85c5;
 }
+.sign-in .loginarea .log .user .check > p {
+  color: #C3297C;
+  font-weight: 500;
+  font-size: 16px;
+}
 .sign-in .loginarea .log .user a button {
   padding: 12px 30px;
   background-color: #01ACEE;
