@@ -230,6 +230,10 @@ body {
   font-weight: 500;
   font-size: 16px;
 }
+.sign-in .loginarea .log .user .check > p:hover {
+  color: #01ACEE;
+  cursor: pointer;
+}
 .sign-in .loginarea .log .user a button {
   padding: 12px 30px;
   background-color: #01ACEE;
