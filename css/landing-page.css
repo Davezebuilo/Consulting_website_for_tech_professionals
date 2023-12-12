@@ -802,6 +802,7 @@ body {
   border: 2px solid #C3297C;
   -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.329);
           box-shadow: 0 3px 15px rgba(0, 0, 0, 0.329);
+  cursor: pointer;
 }
 .events .eventCarousel .eventCard:hover .cardimg img {
   -webkit-transform: scale(1.03);
@@ -2181,6 +2182,7 @@ body {
   border: 2px solid #C3297C;
   -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.329);
           box-shadow: 0 3px 15px rgba(0, 0, 0, 0.329);
+  cursor: pointer;
 }
 .featuredposts .gposts .crusl .post .eventCard:hover .cardimg img {
   -webkit-transform: scale(1.03);
