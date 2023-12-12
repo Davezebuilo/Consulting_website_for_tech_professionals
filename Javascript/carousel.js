@@ -49,11 +49,11 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     $(".carousel3").owlCarousel({
-        items:3,
+        // items:3,
         loop:true,
         margin:30,
         autoplay:true,
-        autoplayTimeout:3000,
+        autoplayTimeout: 10000,
         autoplayHoverPause:true,
         stagePadding: 50,
         responsive: {
