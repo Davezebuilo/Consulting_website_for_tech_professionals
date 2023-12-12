@@ -1320,3 +1320,140 @@
         }
     }
 }
+
+// featured posts
+@mixin featured-posts{
+    width: 100%;
+    height: auto;
+    padding-inline: $Margin;
+    display: grid;
+    place-items: center;
+    margin: 40px 0 100px 0;
+
+    h2{
+        color: $PrimaryColor;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+        text-align: center;
+
+        span{
+            color: $SecondaryColor;
+        }
+    }
+
+    .gposts{
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .crusl{
+            padding-inline: 10px;
+            width: auto;
+            height: auto;
+            display: grid;
+            place-items: center;
+            grid-gap: 40px;
+            grid-template-columns: repeat(6, 1fr);
+            transition: ease;
+            // overflow: scroll;
+
+            &::-webkit-scrollbar{
+                display: none;
+            }
+    
+            // &::-webkit-scrollbar-thumb{
+            //     display: block;
+            //     background-color: aqua;
+            // }
+    
+            .post{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                .eventCard{
+                    width: 400px;
+                    height: 250px;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    transition: 300ms ease;
+        
+                    &:hover{
+                        transform: scale(0.98);
+                        border: 2px solid $SecondaryColor;
+                        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.329);
+        
+                        .cardimg{
+        
+                            img{
+                                transform: scale(1.03);
+                            }
+                        }
+        
+                        .eventcardTxt{
+                            background-color: rgba(30, 29, 29, 0.33);
+                        }
+                    }
+        
+                    .cardimg{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+        
+                        img{
+                            object-fit: contain;
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            transition: 300ms;
+                        }
+                    }
+        
+                    .eventcardTxt{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                        background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.755), rgba(0, 0, 0, 0));
+                        top: 0;
+                        padding: 10px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        
+        
+                        .userpic{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            overflow: hidden;
+        
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+        
+                        p{
+                            color: $PrimaryColor;
+                            margin-top: 5px;
+        
+                            &:nth-of-type(2){
+                                color: $backgroundColor-v;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

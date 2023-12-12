@@ -198,3 +198,8 @@ body{
         @include footer-tab;
     }
 }
+
+// featured posts
+.featuredposts{
+    @include featured-posts;
+}
