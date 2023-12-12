@@ -5,6 +5,7 @@ $(document).ready(function(){
         margin:20,
         autoplay:true,
         autoplayTimeout:3000,
+        stagePadding: 50,
         autoplayHoverPause:true,
         responsive: {
             0: {
@@ -42,6 +43,31 @@ $(document).ready(function(){
                 items: 3,
                 margin: 15
             }
+        }
+    });
+  });
+
+  $(document).ready(function(){
+    $(".carousel3").owlCarousel({
+        items:3,
+        loop:true,
+        margin:30,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        stagePadding: 50,
+        responsive: {
+            // 0: {
+            //     items: 1.5
+            // },
+            // 768: {
+            //     items: 1,
+            //     margin: 290
+            // },
+            // 1280: {
+            //     items: 3,
+            //     margin: 15
+            // }
         }
     });
   });

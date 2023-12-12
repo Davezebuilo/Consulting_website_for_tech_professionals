@@ -2153,19 +2153,6 @@ body {
 .featuredposts .gposts::-webkit-scrollbar {
   display: none;
 }
-.featuredposts .gposts .crusl {
-  padding-inline: 10px;
-  width: auto;
-  height: auto;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  grid-gap: 40px;
-  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr;
-  grid-template-columns: repeat(6, 1fr);
-  -webkit-transition: ease;
-  transition: ease;
-}
 .featuredposts .gposts .crusl::-webkit-scrollbar {
   display: none;
 }
