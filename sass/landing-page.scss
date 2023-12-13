@@ -202,4 +202,9 @@ body{
 // featured posts
 .featuredposts{
     @include featured-posts;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include feature-mobl;
+    }
 }
