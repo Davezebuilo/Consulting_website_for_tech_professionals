@@ -22,6 +22,7 @@ body{
     // mobile media query
     @include mediaQuery(767px){
         overflow-x: hidden;
+        @include consult-mobl;
     }
 }
 

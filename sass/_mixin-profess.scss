@@ -211,9 +211,11 @@
 
 @mixin data-eng{
     width: 100%;
-    height: 950px;
+    height: auto;
     padding-inline: $Margin;
     margin-bottom: 70px;
+    display: grid;
+    place-items: center;
 
     >p{
         color: $PrimaryColor;
@@ -228,6 +230,13 @@
         span{
             color: $SecondaryColor;
         }
+    }
+
+    button{
+        @include border-button();
+        align-self: center;
+        margin-top: 40px;
+        margin-bottom: 90px;
     }
 
 
