@@ -497,3 +497,108 @@
         margin-left: 0px;
     }
 }
+
+// sign in 
+@mixin signin-tab{
+    padding-inline: $margin-mobl;
+    height: 530px;
+
+    .signInimg{
+        display: grid;
+
+
+        .opts{
+            display: grid;
+            place-items: center;
+            top: 7%;
+
+            .opt{
+                width: 300px;
+            }
+        }
+    }
+
+    .loginarea{
+
+        .log{
+
+            .user{
+
+                input{
+                    width: 350px;
+                }
+
+                .check{
+                    width: 350px;
+                }
+
+                a{
+
+                    button{
+                        padding-inline: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin signin-mobl{
+    padding-inline: $margin-mobl;
+    flex-direction: column;
+    height: auto;
+
+    .signInimg{
+        display: grid;
+        width: 100%;
+
+
+        .opts{
+            display: grid;
+            place-items: center;
+            top: 7%;
+            position: static;
+
+            .opt{
+                width: 300px;
+            }
+        }
+    }
+
+    .loginarea{
+        width: 100vw;
+        height: auto;
+        padding-bottom: 50px;
+        margin-top: 60px;
+
+        .log{
+
+            .user{
+
+                select{
+                    width: 350px;
+                    font-size: 16px;
+
+                    option{
+                        font-size: 12px;
+                        font-weight: 200;
+                    }
+                }
+
+                input{
+                    width: 350px;
+                }
+
+                .check{
+                    width: 350px;
+                }
+
+                a{
+
+                    button{
+                        padding-inline: 150px;
+                    }
+                }
+            }
+        }
+    }
+}

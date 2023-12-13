@@ -14,11 +14,6 @@ body {
   scroll-behavior: smooth;
   background-color: #092145;
 }
-@media screen and (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-  }
-}
 
 .sign-in {
   display: -webkit-box;
@@ -252,4 +247,80 @@ body {
   background-color: #C3297C;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+@media screen and (max-width: 767px) {
+  .sign-in {
+    padding-inline: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .sign-in .signInimg {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+  }
+  .sign-in .signInimg .opts {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    top: 7%;
+    position: static;
+  }
+  .sign-in .signInimg .opts .opt {
+    width: 300px;
+  }
+  .sign-in .loginarea {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 50px;
+    margin-top: 60px;
+  }
+  .sign-in .loginarea .log .user select {
+    width: 350px;
+    font-size: 16px;
+  }
+  .sign-in .loginarea .log .user select option {
+    font-size: 12px;
+    font-weight: 200;
+  }
+  .sign-in .loginarea .log .user input {
+    width: 350px;
+  }
+  .sign-in .loginarea .log .user .check {
+    width: 350px;
+  }
+  .sign-in .loginarea .log .user a button {
+    padding-inline: 150px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .sign-in {
+    padding-inline: 15px;
+    height: 530px;
+  }
+  .sign-in .signInimg {
+    display: -ms-grid;
+    display: grid;
+  }
+  .sign-in .signInimg .opts {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    top: 7%;
+  }
+  .sign-in .signInimg .opts .opt {
+    width: 300px;
+  }
+  .sign-in .loginarea .log .user input {
+    width: 350px;
+  }
+  .sign-in .loginarea .log .user .check {
+    width: 350px;
+  }
+  .sign-in .loginarea .log .user a button {
+    padding-inline: 150px;
+  }
 }
