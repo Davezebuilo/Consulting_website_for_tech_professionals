@@ -50,7 +50,7 @@ $(document).ready(function(){
     $(".carousel3").owlCarousel({
         // items:3,
         loop:true,
-        margin:30,
+        // margin:300,
         autoplay:true,
         autoplayTimeout: 10000,
         autoplayHoverPause:true,
@@ -62,22 +62,32 @@ $(document).ready(function(){
                 stagePadding: 5,
                 autoplayTimeout: 5000
             },
-            428: {
-                items: 1.2,
-                margin: 5,
-                stagePadding: 5,
-                autoplayTimeout: 5000
-            },
             768: {
                 items: 2.3,
                 margin: 400
+            },
+            1024: {
+                items: 3,
+                margin: 400,
+                stagePadding: 0
             },
             1280: {
                 items: 3,
                 margin: 280
             },
-            1440: {
+            1366: {
                 items: 3,
+                margin: 200
+            },
+            1367: {
+                items: 3,
+                margin: 200,
+                stagePadding: 300
+            },
+            1536: {
+                items: 3,
+                margin: 200,
+                stagePadding: 100
             }
         }
     });
