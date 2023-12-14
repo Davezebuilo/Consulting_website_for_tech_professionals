@@ -99,6 +99,18 @@
                     width: 100%;
                 }
             }
+
+            &:nth-of-type(4){
+                color: $SecondaryColor;
+
+                a{
+                    color: $SecondaryColor;
+
+                    &:hover{
+                        color: $whiteColor;
+                    }
+                }
+            }
         }
     }
 }

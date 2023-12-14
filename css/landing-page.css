@@ -110,6 +110,15 @@ body {
 .laptop-navbar ul li:hover::after {
   width: 100%;
 }
+.laptop-navbar ul li:nth-of-type(4) {
+  color: #C3297C;
+}
+.laptop-navbar ul li:nth-of-type(4) a {
+  color: #C3297C;
+}
+.laptop-navbar ul li:nth-of-type(4) a:hover {
+  color: #f0f0f0;
+}
 .laptop-navbar .button-wrap {
   width: 250px;
   height: auto;
