@@ -5,12 +5,31 @@
 
 .pro-profile{
     @include pro-profile;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include feature-mobl;
+    }
 }
 
 .search{
     @include search;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include search-mobl;
+    }
 }
 
 .data-eng{
-    @include data-eng
+    @include data-eng;
+
+    // mobile media query
+    @include mediaQuery(767px){
+        @include data-eng-mobl;
+    }
+    // mobile media query
+    @include mediaQuery(1024px, 768px){
+        @include data-eng-tab;
+    }
 }

@@ -631,3 +631,36 @@
         }
     }
 }
+
+// profess page
+@mixin data-eng-tab{
+    padding-inline: $margin-mobl;
+
+    .allcap{
+
+        .profiles-carousels{
+            grid-template-columns: repeat(2, 1fr);
+            width: auto;
+        }
+    }
+}
+@mixin data-eng-mobl{
+    padding-inline: $margin-mobl;
+    margin-top: 40px;
+
+    .allcap{
+
+        .profiles-carousels{
+            grid-template-columns: repeat(1, 1fr);
+            width: auto;
+        }
+    }
+}
+
+@mixin search-mobl{
+    padding-inline: $margin-mobl;
+
+    .searchbar{
+        width: 100%;
+    }
+}

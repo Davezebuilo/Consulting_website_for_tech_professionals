@@ -198,6 +198,29 @@
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+@media screen and (max-width: 767px) {
+  .pro-profile {
+    padding-inline: 15px;
+    height: auto;
+    margin-top: 40px;
+  }
+  .pro-profile h2 {
+    margin-bottom: 15px;
+  }
+  .pro-profile .gposts .crusl .post {
+    gap: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pro-profile .gposts .crusl .post .eventCard {
+    width: 300px;
+    height: 200px;
+  }
+}
 
 .search {
   width: 100%;
@@ -247,6 +270,14 @@
 .search .searchbar i:hover {
   background-color: #5a85c5;
   cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .search {
+    padding-inline: 15px;
+  }
+  .search .searchbar {
+    width: 100%;
+  }
 }
 
 .data-eng {
@@ -394,4 +425,25 @@
 }
 .data-eng .allcap .profiles-carousels .profile-card .profile-cardtxt .cardButtons p {
   font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+  .data-eng {
+    padding-inline: 15px;
+    margin-top: 40px;
+  }
+  .data-eng .allcap .profiles-carousels {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .data-eng {
+    padding-inline: 15px;
+  }
+  .data-eng .allcap .profiles-carousels {
+    -ms-grid-columns: 1fr 15px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+  }
 }
