@@ -208,3 +208,18 @@ body{
         @include feature-mobl;
     }
 }
+
+// for the cmmunity page
+.devs-comm{
+    @include devs-comm;
+
+    // mobile mobile query
+    @include mediaQuery(767px){
+        @include devs-comm-mobl;
+    }
+
+    // mobile tablet query
+    @include mediaQuery(1024px, 768px){
+        @include devs-comm-tab;
+    }
+}

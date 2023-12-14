@@ -2268,3 +2268,134 @@ body {
     height: 200px;
   }
 }
+
+.devs-comm {
+  width: 100%;
+  height: auto;
+  padding-inline: 90px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.devs-comm h2 {
+  color: #01ACEE;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.devs-comm h2 span {
+  color: #C3297C;
+}
+.devs-comm .dev-wrap {
+  width: auto;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.devs-comm .dev-wrap .dev-cards {
+  padding-inline: 10px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+.devs-comm .dev-wrap .dev-cards .dev-card {
+  width: 350px;
+  height: 400;
+  padding: 15px 90px 15px 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  gap: 10px;
+  border: 1px solid #0e2a54;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.devs-comm .dev-wrap .dev-cards .dev-card:hover {
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.197);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.197);
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  border: 1px solid #C3297C;
+  cursor: pointer;
+}
+.devs-comm .dev-wrap .dev-cards .dev-card .dev-img {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.devs-comm .dev-wrap .dev-cards .dev-card .dev-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.devs-comm .dev-wrap .dev-cards .dev-card .dev-cardTxt {
+  width: 250px;
+}
+.devs-comm .dev-wrap .dev-cards .dev-card .dev-cardTxt h3 {
+  color: #C3297C;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.devs-comm .dev-wrap .dev-cards .dev-card .dev-cardTxt p {
+  font-size: 14px;
+  color: #5a85c5;
+}
+.devs-comm .dev-wrap .dev-cards .dev-card a button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background: none;
+  outline: none;
+  border: 1px solid #01ACEE;
+  border-radius: 5px;
+  color: #01ACEE;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding-inline: 110px;
+}
+.devs-comm .dev-wrap .dev-cards .dev-card a button:hover {
+  cursor: pointer;
+  background-color: #0AE8F5;
+  background-color: rgba(1, 171, 239, 0.3);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+@media screen and (max-width: 767px) {
+  .devs-comm {
+    padding-inline: 15px;
+  }
+  .devs-comm .dev-wrap .dev-cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .devs-comm {
+    padding-inline: 15px;
+  }
+  .devs-comm .dev-wrap .dev-cards {
+    -ms-grid-columns: 1fr 40px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
